@@ -1,0 +1,692 @@
+0000000000000000000000000000000000000000 691a874aad10a06b5bc73545cea2597cc858c8f3 irene <ireneyclin@msi.com> 1496383790 +0800	commit (initial): clean kernel
+691a874aad10a06b5bc73545cea2597cc858c8f3 b632d287ceb0c6df7118bde41aa64583d7bf1a0e irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00081147 Support i.MX35 3stack board
+b632d287ceb0c6df7118bde41aa64583d7bf1a0e 9532f38c12c12a4a3347e30bf92ef08a3d28e39d irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00094618 Update .gitignore configure file
+9532f38c12c12a4a3347e30bf92ef08a3d28e39d 2577ee4162d435d11d0c5b6ffcd36a81737f9333 irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00094619 Support i.MX31 3stack board
+2577ee4162d435d11d0c5b6ffcd36a81737f9333 0fe727ba4cdd49afb92cfcfd7109b88e5169353c irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00099697 Add nand driver for mx35
+0fe727ba4cdd49afb92cfcfd7109b88e5169353c 56e07a6b8a92309093c93e7e24b8710869059bfb irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00102776 Support boot from NAND on i.mx35 3stack TO1
+56e07a6b8a92309093c93e7e24b8710869059bfb 3a40516aeaef08cc6ce90b15870cd3b40b5f03c0 irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00102788 Remove CONFIG_NAND_BOOT on i.MX31 3stack
+3a40516aeaef08cc6ce90b15870cd3b40b5f03c0 349298a839ba72573a2908ce6e368ca8855b170b irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00103914 Support i.MX35 TO2 and 3stack board version 2
+349298a839ba72573a2908ce6e368ca8855b170b caf2a1d4c9ef445b8091c5e0a1ff02a7ad0dc158 irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00104583 MX35 can not boot up kernel
+caf2a1d4c9ef445b8091c5e0a1ff02a7ad0dc158 ad8dcf88aa8fd0b1fdf8d58ab50041bbbf6e9009 irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00107886 Porting MX31, MX35 3stack to u-boot V2009.01
+ad8dcf88aa8fd0b1fdf8d58ab50041bbbf6e9009 42ce0136def244650cf68853da758e6fde7bab22 irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00108473 Porting i.MX51 3stack TO2 support to V2009.01
+42ce0136def244650cf68853da758e6fde7bab22 96713a02bebae69f821ec8bda5d8a9794c0c9f99 irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00108673 Add i.MX25 core to U-Boot
+96713a02bebae69f821ec8bda5d8a9794c0c9f99 8ce583287fb2ccc11cefd1ca1fe2a7dd73f723b9 irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00107840 Add U-Boot for MX25 PDK board
+8ce583287fb2ccc11cefd1ca1fe2a7dd73f723b9 05749901854b6b1cdc45870a94c1d61d7cbb73e4 irene <ireneyclin@msi.com> 1496383791 +0800	am: ENGR00109851 Add nand driver for MX51 uboot
+05749901854b6b1cdc45870a94c1d61d7cbb73e4 29962add404b074180c2bc6ddb8591178922aeb5 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00110586 MX31: Resolve Copyright issue for mx31 files
+29962add404b074180c2bc6ddb8591178922aeb5 537bae5ac7970e38bb42282493407cededc53d6b irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00112298 BBG2: Basic boot.
+537bae5ac7970e38bb42282493407cededc53d6b ae9b30f95b2d8f68ae37e5547f61a7e254099521 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00112273 BBG2: MMC boot support.
+ae9b30f95b2d8f68ae37e5547f61a7e254099521 47a1d925b45afdb9badcbb02ad0e312c02520521 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00112845 spi nor boot and pmic support for BBG2.
+47a1d925b45afdb9badcbb02ad0e312c02520521 7f43340a681180840515d2a1b27e776eaed3dd6f irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00113148 Add build option to uboot for different media type
+7f43340a681180840515d2a1b27e776eaed3dd6f 6125625fd07de6165a3b9a6bb93f66ebc329f137 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00113439: BBG2, enable SPI NOR and MMC in one image.
+6125625fd07de6165a3b9a6bb93f66ebc329f137 109ee8016c0cda917325e6f9517e817b2290f258 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00113475: Add auto-complete and platform prompt for each platform.
+109ee8016c0cda917325e6f9517e817b2290f258 f7e2a83c13ae333fe11df80cb8617addd6225348 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00113611: Add FEC support for BBG2.
+f7e2a83c13ae333fe11df80cb8617addd6225348 3a602555de65495ba8bee3ce97b07109ab4ab06f irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00111465: Remove Watchdog disable codes in MX51 uboot.
+3a602555de65495ba8bee3ce97b07109ab4ab06f 421a953ef0f9121e6086e1ea1b58d4cfa756f72a irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00114233 Add support for programming ubifs image on nand flash
+421a953ef0f9121e6086e1ea1b58d4cfa756f72a 19cc986d2da0297a6eed36e8077a61366a66441e irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00114236 Disable NAND driver interleave mode support
+19cc986d2da0297a6eed36e8077a61366a66441e 827f3d58e575adc0c88f60a3056318c3007f6868 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00114201: Add MMC configs to mx35 3stack config file.
+827f3d58e575adc0c88f60a3056318c3007f6868 8ad2036dfe53834a6e477853fc194d24a769d589 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00114178 Support MMC/SD boot and enable dhcp in uboot on MX25
+8ad2036dfe53834a6e477853fc194d24a769d589 e42fb79bc7aaff7af98db2be891049a9eafb6e7f irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00114393: Support Atmel AT45DB321D SPI NOR flash.
+e42fb79bc7aaff7af98db2be891049a9eafb6e7f 8c8b95c15e1fbc3ef007533771fb2efb61f76cac irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00114367: Add BABBAGE machine id, BBG2.5 rev id for rootfs init.
+8c8b95c15e1fbc3ef007533771fb2efb61f76cac 2f4d0db9fe3d0314a94aed05af7dcdfa6a1bc957 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00114746: Disable flash header for mx35 nand boot
+2f4d0db9fe3d0314a94aed05af7dcdfa6a1bc957 1042fadff1312d0d3912e0a7d72fd0d531c82147 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00113941 MX233: Make UBOOT v2009.01 work on EVK board
+1042fadff1312d0d3912e0a7d72fd0d531c82147 046b2186de7b42ea7a40a4fa995265177d23059d irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00115333: Enable cp command for MMC
+046b2186de7b42ea7a40a4fa995265177d23059d 1acc83b42bad7439ed608b7ebc86c2a8a6dcb4c3 irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00115046: Add new MMC config option for mx35.
+1acc83b42bad7439ed608b7ebc86c2a8a6dcb4c3 f77c9bbbc2d56bd4b4f1b5398fe84820a42e091f irene <ireneyclin@msi.com> 1496383792 +0800	am: ENGR00115592: Replace whitespaces with tabs in Makefile
+f77c9bbbc2d56bd4b4f1b5398fe84820a42e091f a9694f4f89a4c9ae996993bbd26e55b0d72c1e0f irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116140 MX51 3stack low level does not set M4IF correctly
+a9694f4f89a4c9ae996993bbd26e55b0d72c1e0f c77140cc06f00a8023a7943c15d9ea837d05f7aa irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116083: Recovery mode support for Android on mx51.
+c77140cc06f00a8023a7943c15d9ea837d05f7aa 0b4af1729fd5e55d97593c6b459f603e2d458262 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116203: Change nand Makefile to use CONFIG_MXC_NAND.
+0b4af1729fd5e55d97593c6b459f603e2d458262 b74d2bfeb82dcc43e3a9843913c35fce1b09d15e irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116243: I2C support for mx51 3ds board.
+b74d2bfeb82dcc43e3a9843913c35fce1b09d15e ef9d5e99fab1d30e98dfd3d34be4e1d1cf14dc8c irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116472-1 U-BOOT upgrade to V2009.08
+ef9d5e99fab1d30e98dfd3d34be4e1d1cf14dc8c 4a98bd25edd8646e910a8db3b8bb4d7c261694b9 irene <ireneyclin@msi.com> 1496383793 +0800	am: u-boot v2009.08 sd/mmc support.
+4a98bd25edd8646e910a8db3b8bb4d7c261694b9 1b3aa1a2a9989d89de801084e935e3b21ed844de irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116504-1: Sync clock and l2cc code with redboot.
+1b3aa1a2a9989d89de801084e935e3b21ed844de 5b8f570796960c91f5483247a1e5e950fe44d4bd irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116504-2: Add mx51 bbg to3 support.
+5b8f570796960c91f5483247a1e5e950fe44d4bd 0f67e06e687f7d1341e8d29d7e2606dcb731c040 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116924 Uboot: Boot up hang at detecting NAND when cold boot
+0f67e06e687f7d1341e8d29d7e2606dcb731c040 f49a23b345be1ee8afbff99963c590a3fcfc58ef irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00117616: PATA support in u-boot.
+f49a23b345be1ee8afbff99963c590a3fcfc58ef 9140e6abfa44e76292f4c734c18ce130019defb1 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00116772 Workaround for ARM errata ID #468414
+9140e6abfa44e76292f4c734c18ce130019defb1 caf7de7371e504068e7bdcd280a0c5d74602ad10 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118294: Misc changes for v2009.08 upgrade.
+caf7de7371e504068e7bdcd280a0c5d74602ad10 275b9920686541ad70f43476d0ff706b15c54ab5 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118362: Correct recovery NAND cmd
+275b9920686541ad70f43476d0ff706b15c54ab5 61889a9933ec2905e629e501622fba3a6dae01f6 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118428 MX233 Uboot: reslove the build error for branch imx_v2009.08
+61889a9933ec2905e629e501622fba3a6dae01f6 6036501c246cdca77daebed6ea94596fb6319063 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118576 MX25: Support Smc911x ethernet
+6036501c246cdca77daebed6ea94596fb6319063 270b0dfccd73adba0337ef4e321e3c1df534493b irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118647 Fix smc911x receive packet length not set correctly
+270b0dfccd73adba0337ef4e321e3c1df534493b 0e886228dd1c0b32e3f5978581453bffb25216ac irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118682 Update the MX25 MAX Priority
+0e886228dd1c0b32e3f5978581453bffb25216ac 0f18f24efe74dbc36816958d02e733ee2d1cff57 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118816 Fix reboot/reset failure with image on nand
+0f18f24efe74dbc36816958d02e733ee2d1cff57 5bcb70c90b3cfc64f1b92e6974ee7e269e946e87 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118751: Some mmc card can't read and write from right offset.
+5bcb70c90b3cfc64f1b92e6974ee7e269e946e87 844ec873aad2298f1cec1b5e7261fdcb7602ac2a irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118801: Unknown information when booting from SPI-NOR.
+844ec873aad2298f1cec1b5e7261fdcb7602ac2a 9a25be19557b58b6c76e76e8ac3d52a4df6c66c5 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118579 Enable MMU
+9a25be19557b58b6c76e76e8ac3d52a4df6c66c5 fc39d41954b054c701422840e1565f66ce68c141 irene <ireneyclin@msi.com> 1496383793 +0800	am: ENGR00118978: Timer adjustment for all platforms
+fc39d41954b054c701422840e1565f66ce68c141 03fcf528b07527fa6a819f1e715022941f015c57 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00118789 Uboot:Update NAND scan scheme to support new nand type
+03fcf528b07527fa6a819f1e715022941f015c57 b5e6a72b9744445665467b9fb4e019c98de9c299 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119133: MX35 can't boot due to wrong frequency setting
+b5e6a72b9744445665467b9fb4e019c98de9c299 5407cdc75f039d1e1c59f44cfc8be772c7c7a54c irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119171: ubifs support for android recovery mode.
+5407cdc75f039d1e1c59f44cfc8be772c7c7a54c 10300c41bfce0789da930f39664d0132151ecab4 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119224: mmu support for mx51 3stack and mx51 bbg
+10300c41bfce0789da930f39664d0132151ecab4 e87f065add86c174adf8b09e4f515c5e75ea0b6a irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00118998: Can not get ip address when kernel boot up
+e87f065add86c174adf8b09e4f515c5e75ea0b6a 95048508aaf852e94b5ce79965b5d19746bb9108 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119246 Add CONFIG_MXC_NAND config flag in MX25 platform
+95048508aaf852e94b5ce79965b5d19746bb9108 8515085422e28d5370c9fbfb4e96e0837221f0c9 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119254: Add mmu header for mx51 build error
+8515085422e28d5370c9fbfb4e96e0837221f0c9 b722d1a8a34be03594f78eeea7de0f1a8122d750 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119486 MX25: Improve Lan9217 ethernet transfer speed
+b722d1a8a34be03594f78eeea7de0f1a8122d750 7da98c160c285bc93881a2bb1bd1f02f65fd92b8 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119505 MX51 BBG: Change DDR2 settings
+7da98c160c285bc93881a2bb1bd1f02f65fd92b8 fd75c3089cb1e93deb1b92b08ca0e2d341d17888 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119526 MX25: Fix mmc read/write failure on mmc uboot
+fd75c3089cb1e93deb1b92b08ca0e2d341d17888 2db6827a88fb6a7dce3d0e2e1142877967cf01f2 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119625 i.MX35: UBoot doesn't accept commands if program uboot to NOR
+2db6827a88fb6a7dce3d0e2e1142877967cf01f2 1a8c9f45e55bee64000565aa4cc12a689337b9eb irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119660 MX35 UBOOT: Can't boot up on 2k page size nand
+1a8c9f45e55bee64000565aa4cc12a689337b9eb e7636c2610af3a7f2113fcca4ae41cf64db87b9b irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119591 Fix SPI-NOR reset issue
+e7636c2610af3a7f2113fcca4ae41cf64db87b9b d8db9ec6cff6ecf8827a020c48b39d33c38675bb irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00118739 Correct the board version of MX51 EVK
+d8db9ec6cff6ecf8827a020c48b39d33c38675bb 72996ae7fa01513708dadf057786831c5ce9884f irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119701 MX51: merge some fixes in 200908 version
+72996ae7fa01513708dadf057786831c5ce9884f ba2e5bca3c3067d2ed50275bbe34d8e50fdab109 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119715: Add multi network support for mx35
+ba2e5bca3c3067d2ed50275bbe34d8e50fdab109 09978be2c28974f0ee4d3648232f6390add9a0fb irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119716: MX28 basic support.
+09978be2c28974f0ee4d3648232f6390add9a0fb 55b41a451f4ff971ee12f0e0c08b317bd7158038 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119738: eMMC card access failed.
+55b41a451f4ff971ee12f0e0c08b317bd7158038 f0e75656a4a780dbe9dd43ad3dfa7060b8634733 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119706: Add esdhcv1 support.
+f0e75656a4a780dbe9dd43ad3dfa7060b8634733 6c23ecaa54c8f3c2a8da9a4b3ade9d400018fdab irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119834: Change PDR0 clock settings for mx35 TO2
+6c23ecaa54c8f3c2a8da9a4b3ade9d400018fdab 84dc5e07d02d1edd0bae1097abd5b9354d8e72ef irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119890: Set right mac addr to FEC register in init
+84dc5e07d02d1edd0bae1097abd5b9354d8e72ef 3d4ed4a8f720e3748897eb3be1bae7eed92042cc irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00119894: Read right value in mxc_i2c
+3d4ed4a8f720e3748897eb3be1bae7eed92042cc 5701ec6a92fd02543ebf2eadad5f56fc67d842f7 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00120191 MX51: Update the M4IF setting
+5701ec6a92fd02543ebf2eadad5f56fc67d842f7 93c03be7fd4e8aa2a802c8f06b8ed91ebea791a3 irene <ireneyclin@msi.com> 1496383794 +0800	am: ENGR00120203: Add fec_addr check for mx51
+93c03be7fd4e8aa2a802c8f06b8ed91ebea791a3 3e435d5bc62ec529a543495ad82523d68e9a3b2a irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00120207: Change recovery mode combo keys
+3e435d5bc62ec529a543495ad82523d68e9a3b2a dcaf5244aca38a16273475eece10ec7178bbdf25 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00120208: Change recovery mode boot_cmd strategy
+dcaf5244aca38a16273475eece10ec7178bbdf25 0feef54ede1affef93713ead52dbcdb679c6a7ee irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00120202 MX51: enable L2 cache
+0feef54ede1affef93713ead52dbcdb679c6a7ee 3fdf6d3e2c6789280590219dba6150b81e2a2b02 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00120206 iMX28 Enable Ethernet and MMC boot support
+3fdf6d3e2c6789280590219dba6150b81e2a2b02 20feb5f4cd28d3c76b7d27e94c08a9c322c192fe irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00120476: Add fuse support for mx51
+20feb5f4cd28d3c76b7d27e94c08a9c322c192fe e8be3e5d323b5bef42c4541e734c5d6a9556a309 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00120830: Add eMMC and eSD fast boot support
+e8be3e5d323b5bef42c4541e734c5d6a9556a309 0dfba60b200326d802829cd2227635eb178fa8b0 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121029 Add MX51-BBG Uboot Firmware support
+0dfba60b200326d802829cd2227635eb178fa8b0 0d7e347e4b022db75daca565f9e3cc70b6a8e770 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00120520: Enable MMU for mx51 and mx35
+0d7e347e4b022db75daca565f9e3cc70b6a8e770 9a7770473d931322847bd0b8c7a6ab0166f54d6e irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121079: Unable to get IP address in uboot
+9a7770473d931322847bd0b8c7a6ab0166f54d6e 0b8e2a0a215fd1b0edc330e9071fab89de0e6129 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121314: Fix mx23 and mx28 u-boot build error
+0b8e2a0a215fd1b0edc330e9071fab89de0e6129 7105f04ad61f2f1f43d5c23ba9d4f63886aa0c63 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121504 Revert ENGR00120191 to restore M4IF values
+7105f04ad61f2f1f43d5c23ba9d4f63886aa0c63 4c16ac606bf0a935e719097f45f0412f0196f5d1 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121379: MX28 U-BOOT enhancements
+4c16ac606bf0a935e719097f45f0412f0196f5d1 4fc0d8d7f8f813cde5946b7e19b2366da1cfc31c irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR000121601: FEC not work in mx28 u-boot
+4fc0d8d7f8f813cde5946b7e19b2366da1cfc31c ceec9f10a3cb74ead32783c9a584dae32121175a irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121202 Add uboot support for MX53
+ceec9f10a3cb74ead32783c9a584dae32121175a a4e41a3dc2ca8256580e8f6f7e78a478eed1b2a5 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121731: Add mmu, l1cache, l2cache support for mx53
+a4e41a3dc2ca8256580e8f6f7e78a478eed1b2a5 e5d69d2ab8fa86d743020d84b70fd5812871183f irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121774 DDR 300Mhz support for MX53 uboot
+e5d69d2ab8fa86d743020d84b70fd5812871183f 38f5f66e24940d906892f724ef3ab73154d40d07 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121779 Support a single kernel image on MX5x parts
+38f5f66e24940d906892f724ef3ab73154d40d07 2b752b7f72dc80eb3e217174baaf41339b65708e irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121832: Some code reconstructure for u-boot
+2b752b7f72dc80eb3e217174baaf41339b65708e e8081ee5c565f38f65e66176bbc19b0be2167cd8 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00121976 UBOOT: some fix for SD/MMC card
+e8081ee5c565f38f65e66176bbc19b0be2167cd8 863ac1ecbe117814160661bd52f3c4be8c270000 irene <ireneyclin@msi.com> 1496383795 +0800	am: ENGR00122046 Update DDR init script for MX53 EVK
+863ac1ecbe117814160661bd52f3c4be8c270000 45e804112430913df8d3d87425880042a41867d1 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122050: mmc can't read data whose size exceeds 32M
+45e804112430913df8d3d87425880042a41867d1 5ce224c90fb4463f4a2d065507052ac0489a008b irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00119033: System can not find MMC/SD card in SD slot 1
+5ce224c90fb4463f4a2d065507052ac0489a008b 3e11b2e5e91f7ac58c99f162d0aa2ad47a942494 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122085 MX35 Add Uboot Firmware support
+3e11b2e5e91f7ac58c99f162d0aa2ad47a942494 232b45811a27b201cabe46b3d873550ad63c0b2e irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122203 UBOOT: Add MX53 ARM2 board support
+232b45811a27b201cabe46b3d873550ad63c0b2e 50df30e07f34a62f78f18eb57a842557d87f3719 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122217 Missed iomem_valid_addr in updater configration
+50df30e07f34a62f78f18eb57a842557d87f3719 1d9116daa2bb2600210a3c205e1b91065c17146c irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122030 Mfg Firmware support fot imx25
+1d9116daa2bb2600210a3c205e1b91065c17146c 1d2b602e5f0bb233899fa99ae7e4c87b9d1da555 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122395: fix license declaration issue in fsl_esdhc.h
+1d2b602e5f0bb233899fa99ae7e4c87b9d1da555 1f9a182293ba8044bb009a94f68596a3614b75c5 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122342: missing mx23 evk machine ID setting
+1f9a182293ba8044bb009a94f68596a3614b75c5 91d93b7d56374f11d71bb41c16314d81ff5f5721 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122643: Integrate linear PMIC
+91d93b7d56374f11d71bb41c16314d81ff5f5721 6350faa00d5e3affa19b14551a4a0f923e8d3ba4 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00122980: Change default env dev to mmc for bbg
+6350faa00d5e3affa19b14551a4a0f923e8d3ba4 03b9be027ef50dddd5960efcb7cd33bf841c82a8 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123265 UBOOT:Preserve NAND bad block indication
+03b9be027ef50dddd5960efcb7cd33bf841c82a8 3293baf0726283906903813cb92d5a292a591e49 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123278: Support clock operation functions
+3293baf0726283906903813cb92d5a292a591e49 8180560949d95dbc2202da0a62a28955e102a004 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123418: Add peripheral clock setup support
+8180560949d95dbc2202da0a62a28955e102a004 674e1fd9c3c1fa3c15df6a8ffdbf5f301e27570c irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123488 MX53 Board Identification
+674e1fd9c3c1fa3c15df6a8ffdbf5f301e27570c e977099fe90fa35c783279d62c37e7a298c6e45b irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123630 Set ddr clk clock according to the board ID
+e977099fe90fa35c783279d62c37e7a298c6e45b b1479f216bdbbf31919ed81e2c4d7cc9a1a6bd31 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123641 MX53: Add DDR3 CPU board support
+b1479f216bdbbf31919ed81e2c4d7cc9a1a6bd31 1ccb2b3e3eeacbe9a6994d68e385c4271ffedd11 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123870 MX53: Set AXI_B clock to 200Mhz
+1ccb2b3e3eeacbe9a6994d68e385c4271ffedd11 6f55daa7600ca0ab72f8c2ce55d3f37f2f900738 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123551: Add mx25 splash screen support
+6f55daa7600ca0ab72f8c2ce55d3f37f2f900738 d57b3bfc11d20e882c0340b2e0cf83502e627f2f irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00124100: Add support for saving env data to active mmc device
+d57b3bfc11d20e882c0340b2e0cf83502e627f2f 528cfbbeee0e4948598faac6fe4537ed31119d14 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00124195 Uboot:Pass EVK RevB board ID to kernel
+528cfbbeee0e4948598faac6fe4537ed31119d14 0a067ca228fce22da60ec3d582ad949e330fad54 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00123484 mx28:support saving environment into sd1
+0a067ca228fce22da60ec3d582ad949e330fad54 3947b5f6c4329c911c5889194c5a28afcf80c3f1 irene <ireneyclin@msi.com> 1496383796 +0800	am: ENGR00124391 mx35: update mfg config file
+3947b5f6c4329c911c5889194c5a28afcf80c3f1 8a68a6567c2512813b7db920f39f12922819064f irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00122651: Add dwc_ahsata support
+8a68a6567c2512813b7db920f39f12922819064f 7c793fbaf7cecea3d0a02ca2020e140dcf6dd17a irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00123782 Fix boot partition problem for emmc
+7c793fbaf7cecea3d0a02ca2020e140dcf6dd17a b796bcc0b23bf05d113c8b89cbde6bf714f3c07f irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124652 UBOOT: MX53 env fails to load when booting from 2nd slot
+b796bcc0b23bf05d113c8b89cbde6bf714f3c07f 8f29cc56dd1ff253bb0bd47dce495b2de6202a4f irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124710 MX53 Uboot: Add MFG tool support
+8f29cc56dd1ff253bb0bd47dce495b2de6202a4f 83894fcaf9ad51a72c00403277b6511ea5d5c122 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124819 Uboot reading/writing sd card fails
+83894fcaf9ad51a72c00403277b6511ea5d5c122 7ffd625b621866cd615de8955be8d828337c3168 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124908 CSPI: make spi_get_cfg platform specific
+7ffd625b621866cd615de8955be8d828337c3168 a7dc5a1cc848bdd1ba68fa7f03cac7804a79b931 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124359 Add uboot support for MX50
+a7dc5a1cc848bdd1ba68fa7f03cac7804a79b931 234dbbc611e23e0e947af63e4332c88607b883bf irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124953 Uboot:Fix the build break for MX51 BBG board
+234dbbc611e23e0e947af63e4332c88607b883bf a7ea15aa604f3d870f1269ab81700cae87b15a17 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124954 MX50: init sys by ROM plug-in feature
+a7ea15aa604f3d870f1269ab81700cae87b15a17 3673c63ac0d70b831f2bca1e33c5b7860d4cc3a0 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124951 Uboot cannot initialize MMC cards
+3673c63ac0d70b831f2bca1e33c5b7860d4cc3a0 fea14db46602e2c13cf29f8196b8c2aa149f4c1d irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124912 MX53: Fix board ID check issue
+fea14db46602e2c13cf29f8196b8c2aa149f4c1d ee8a5ac1d2591a722e40f379d7c9746e9314b6fd irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124627: Dynamic SD slot support for env data.
+ee8a5ac1d2591a722e40f379d7c9746e9314b6fd be59f05afe1ef791aaa0cdc51b8fa996b9d5777a irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00124984 MX53:Add spi_get_cfg function support
+be59f05afe1ef791aaa0cdc51b8fa996b9d5777a f80834804d5e6d8744e2b3451703939fc4652470 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00125042 mx35: Fix error in a comment for header file
+f80834804d5e6d8744e2b3451703939fc4652470 8088b4ebb423b0412f2049a0ca1090b9bb61e08d irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00125045 MX53 Uboot: Adjust VDDGP voltage
+8088b4ebb423b0412f2049a0ca1090b9bb61e08d 44641b66f0e03906b58dc6334050b129bcd33123 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00123924: Reconstructure fuse files and add fuse to mx53.
+44641b66f0e03906b58dc6334050b129bcd33123 642acd9a5417121c1df16feb9044a943e7af4083 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00125174: MX50: change memory configurations
+642acd9a5417121c1df16feb9044a943e7af4083 33b6d63d6e6152ab3a52c7279f4bff43b20dc287 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00125036 Uboot Add eMMC 4.4 support
+33b6d63d6e6152ab3a52c7279f4bff43b20dc287 73aa569ca8c356f5d92b26d67d9ba8326ded5af3 irene <ireneyclin@msi.com> 1496383797 +0800	am: ENGR00125220 MX28: SD(slot0)boot dhcp failed
+73aa569ca8c356f5d92b26d67d9ba8326ded5af3 70cced55de76d96c02ae1a40703020bb2899e5b1 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00125613 mfg-tool: Add mx50 mfg firmware support
+70cced55de76d96c02ae1a40703020bb2899e5b1 1f69d55d876da2899d0877588e225a2a6767b178 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00125735 iMX28 read mac address from fuse
+1f69d55d876da2899d0877588e225a2a6767b178 415b4695ec418eed7e939ff77256a1bf8154801f irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00125757 mx28: change the boot mode offset to TO1.2 version
+415b4695ec418eed7e939ff77256a1bf8154801f cb414305eb29020cd5e034ac1e22e8077f76ed10 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00125324: Add splash screen code and support for epdc
+cb414305eb29020cd5e034ac1e22e8077f76ed10 8d2de5f1bbd21241dc898ff79a0aacddf14513f8 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00125237: Fix incorrect copyright info.
+8d2de5f1bbd21241dc898ff79a0aacddf14513f8 d283d97aad7313f8c58ec9c000008c75e7878d5f irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00126079: Add clk command support for mx51
+d283d97aad7313f8c58ec9c000008c75e7878d5f 9c439c296a9aedb59fa4a18f4ebd77c135f3667f irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00126474 UBOOT: update DDR script on MX50 ARM2
+9c439c296a9aedb59fa4a18f4ebd77c135f3667f 07fdec8d634fea8c1aacad606bb4b0e405e69988 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00126566 MX50:Aligned LPDDR2 initialization to the latest script
+07fdec8d634fea8c1aacad606bb4b0e405e69988 ff9de0aa071de750d90da3869f3b2faa7032b942 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00126764 MX50: Set the memroy size to 512M on LPDDR2 board
+ff9de0aa071de750d90da3869f3b2faa7032b942 79200713a2ca935a9c802eb9cb5281e12d139eeb irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00127368 UBOOT: Make the android recovery code common for platforms
+79200713a2ca935a9c802eb9cb5281e12d139eeb 239f1dc2b648691489439223d498827da70529c6 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131619 UBOOT: Gcc 4.4.x complains weak inline
+239f1dc2b648691489439223d498827da70529c6 f138a26a2b50ffccb792e164bfb0241ca27529c1 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131712 UBOOT:add DDR2 support for IMX50
+f138a26a2b50ffccb792e164bfb0241ca27529c1 32f4488b3da3e7d04af60d4b237547950f2bc563 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00127167: Add gpmi nfc and apbh dma support for mx50.
+32f4488b3da3e7d04af60d4b237547950f2bc563 68fe48b2f982dce4ee24b6fa5afa1258a6d0e728 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131578: Add android recovery mode support for mx53
+68fe48b2f982dce4ee24b6fa5afa1258a6d0e728 1bef808cac76d6b34d33e1c9c5173516435e9d27 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131662: Fix that iram boot don't work
+1bef808cac76d6b34d33e1c9c5173516435e9d27 899ea7063c9834b0e6dee1c34c8f2e05aa3cd3f9 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131705-1 rename mx53_evk folder as mx53_rd
+899ea7063c9834b0e6dee1c34c8f2e05aa3cd3f9 4d58d2360cdcdacf48a39ff59c88a61375d7e445 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131705-2 Add MX53 ARD support
+4d58d2360cdcdacf48a39ff59c88a61375d7e445 34742b473afc4c3223f09384f876050afc490502 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131705-3 Import new mach-type header file
+34742b473afc4c3223f09384f876050afc490502 d44614f9a8227c0a9d4cd4ced070298bfc8721d1 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131705-4 MX53: fix typo error for recovery
+d44614f9a8227c0a9d4cd4ced070298bfc8721d1 2dadd3514239eb130ed4bdb50df1d2b50da46ca5 irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131792: Fix mx50 lpddr2 build errors
+2dadd3514239eb130ed4bdb50df1d2b50da46ca5 59f73dae01c402f7fe57c6da0dc0a13425b67f4d irene <ireneyclin@msi.com> 1496383798 +0800	am: ENGR00131779: Use serial_mxc as uart driver for all platforms
+59f73dae01c402f7fe57c6da0dc0a13425b67f4d de88f5e876cdd1c9819e31323ab9127b626cfd23 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00131691 MX50 RDP Uboot
+de88f5e876cdd1c9819e31323ab9127b626cfd23 0e9a391358150baf00afe7f45d3e83bc0e20c5fe irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00131840 MX53 ARD:use serial_mxc as uart driver
+0e9a391358150baf00afe7f45d3e83bc0e20c5fe 79329045b72883b98768dc0ba938a68c981ff546 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00131924: using ext4 as default recovery filesystem
+79329045b72883b98768dc0ba938a68c981ff546 ef32ba06955c03bc761abf4d692ae2efd31c16fe irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00131936 MX5X corrent mx53_evk mx51_BBG android default env setting
+ef32ba06955c03bc761abf4d692ae2efd31c16fe 75c69393be2644aca0a0a4bbdabafb7673ddda8f irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132014: nand read and write page may fail in some pages
+75c69393be2644aca0a0a4bbdabafb7673ddda8f 2b678d6a90bb87c39758850944f26ca6e8806f54 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132526 MX50 RDP Update to latest LPDDR2 script
+2b678d6a90bb87c39758850944f26ca6e8806f54 da38632a025ccfab78b7cb2e83cc8b17c6ffccd9 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132618 MX53 MFG:use serial_mxc as uart driver
+da38632a025ccfab78b7cb2e83cc8b17c6ffccd9 842c4df6a51e664ef54b32f964f3c497f44a9aba irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132656 MX53 ARD: Add MFG tool support
+842c4df6a51e664ef54b32f964f3c497f44a9aba 3a69d81c579671e3b2df2cb06d3ed188c3033b6a irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132617 MX53: add NAND support
+3a69d81c579671e3b2df2cb06d3ed188c3033b6a 5fa0e9bf2677dd175e7989e6630b1519b0235a98 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132709 MX53: add "clk nfc" command support
+5fa0e9bf2677dd175e7989e6630b1519b0235a98 22c87f1eff0ab08acc121df1df08f17dd0d7e555 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132727 NAND: remove REG_NFC_ONE_CYCLE calling
+22c87f1eff0ab08acc121df1df08f17dd0d7e555 5938d3a71981547bf0dd07dab0ae8d91f7f2502b irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132758 correct NFC_CLK definition
+5938d3a71981547bf0dd07dab0ae8d91f7f2502b 5750688d4d0ae67c848a3d4bdb6ebf9b9519535d irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132759 MX53: use 32K CLK as GPT source
+5750688d4d0ae67c848a3d4bdb6ebf9b9519535d 1910a944a6ec01a2ac93d57b03b0a8a6c1f78ee1 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132886 mx50-rdp: add mx50 rdp board mfg-tool firmware defconfig
+1910a944a6ec01a2ac93d57b03b0a8a6c1f78ee1 c26da3f0835610f1367b9f6007dc90422773b70c irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132957 mfg-tool: should add stop usb operation for mx50 rdp
+c26da3f0835610f1367b9f6007dc90422773b70c a3b0b0e45096c0c2b7a3f4b81cd245378d592d4a irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132965 add MT29F16G08ABACA NAND description
+a3b0b0e45096c0c2b7a3f4b81cd245378d592d4a 4916ebc26404b2fd52f3b9f7652d16210ba05c8d irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00133049 Support nand flash for MX28
+4916ebc26404b2fd52f3b9f7652d16210ba05c8d ae575cc22c799648d2c19c3a961f790d818fd02f irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00133530 plug-in support mfgtools and sb_loader
+ae575cc22c799648d2c19c3a961f790d818fd02f 859d0ca75bff93fadb3246fbe57b67ee98f4fb6e irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00132909 MX53 Uboot: Support for TO2
+859d0ca75bff93fadb3246fbe57b67ee98f4fb6e 90e3eab4641b77a4a34e127aa5a6e9610939560a irene <ireneyclin@msi.com> 1496383799 +0800	am: Get common/cmd_fastboot.c and include/fastboot.h from omap uboot git. The code realized common Android USB fastboot protocol.
+90e3eab4641b77a4a34e127aa5a6e9610939560a e2f4e3f8f40759f51aed24a907e476cbf031a3a2 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00133743 Change code style of fastboot code to pass review-commits.
+e2f4e3f8f40759f51aed24a907e476cbf031a3a2 c4ead52a7b515ed918ab436aeb87dcc2deabd9fb irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00133756:UBOOT:NAND:Remove the 2G limitation from NAND driver
+c4ead52a7b515ed918ab436aeb87dcc2deabd9fb eaef4b4c435c87e6934dd3f179fcdb1ae0d23991 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00133689 MX51: set MC13892 charge output voltage as 4.2V
+eaef4b4c435c87e6934dd3f179fcdb1ae0d23991 6b90a33cfa1f3fc63bb330af1f0ab28989bf2752 irene <ireneyclin@msi.com> 1496383799 +0800	am: ENGR00133551-1 Add freescale usb udc support for i.mx51 platform.
+6b90a33cfa1f3fc63bb330af1f0ab28989bf2752 3d2c4e25c927f77e7be83d64e2405061102839bc irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00133551-2 Add fastboot driver support for android.
+3d2c4e25c927f77e7be83d64e2405061102839bc fd51f98522da83f1ba88e3c8f33482387fca5abf irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00133124: Add nand support for mx50 rdp
+fd51f98522da83f1ba88e3c8f33482387fca5abf 0bddbd8081b4b9280399a4809c691630f33c64d3 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00134098-1 MX51: Update fastboot usb init seq
+0bddbd8081b4b9280399a4809c691630f33c64d3 c77fc9b153370862568f1cd74189e061b4e19103 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00134098-2 MX53: Add fastboot support for android.
+c77fc9b153370862568f1cd74189e061b4e19103 34c526350e460e4e16e7f40c6d186ccdbd9ae1f1 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00133579 Uboot ESDHCv3 Remove workaround for DLL
+34c526350e460e4e16e7f40c6d186ccdbd9ae1f1 fa92061e7a3aa6c4f6e457481002159978623067 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00133437 MX50 Uboot support for TO 1.1.1 precode
+fa92061e7a3aa6c4f6e457481002159978623067 2f72eaba412baabc1a65b80da066def0c50c1b3b irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR12345678 Change ddr write delay in the PHY
+2f72eaba412baabc1a65b80da066def0c50c1b3b aecb8155e79f73eeb26def575a3dc3c8ce51734b irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00025557: MX50 Add ZQ calibration support for TO1.1.1.
+aecb8155e79f73eeb26def575a3dc3c8ce51734b 390ecd6a210af4c3548db573fc3614e1f32461ac irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00133744: Merge mx50_arm2 to mx50_rdp
+390ecd6a210af4c3548db573fc3614e1f32461ac 8a70c9260baf43fbd8e0886dd1419bf798279d0d irene <ireneyclin@msi.com> 1496383800 +0800	am: NAND: Update to support 64 bit device size
+8a70c9260baf43fbd8e0886dd1419bf798279d0d 41de5553d6c4363f952dacc09bd11d1acc117a80 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00134220-1 NAND: fix up the chip select handling
+41de5553d6c4363f952dacc09bd11d1acc117a80 9394d8eb11609261fec4bb057db0fb8abafb3071 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00134220-2 Need use CONFIG_SYS_NAND_MAX_CHIPS
+9394d8eb11609261fec4bb057db0fb8abafb3071 93d853e2c827c04e538a626cfddbeb830a1ec25d irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00134220-3 Fix the nand bad command issue
+93d853e2c827c04e538a626cfddbeb830a1ec25d 139fa31458886fe5b1d3c63c3b91317f252bb748 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00136031 mfgtool: sync config file for mx50 rdp
+139fa31458886fe5b1d3c63c3b91317f252bb748 1f8fa208535ef236fa0653ce8ef3e88a898be786 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00136042 Add ZQ calib config and update script for DDR2
+1f8fa208535ef236fa0653ce8ef3e88a898be786 7fcd5830fb1c672cc3e954985dd7ebbfcd1b6f50 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00136081 DDR script update for MX53 TO2 ARD
+7fcd5830fb1c672cc3e954985dd7ebbfcd1b6f50 e99e5f5e063475d0543137dbc189985db1395ac2 irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00136170 MX50 Add ZQ calibration revision for TO1.1
+e99e5f5e063475d0543137dbc189985db1395ac2 d98153866f8ce4d5429358d25e70021e038503d6 irene <ireneyclin@msi.com> 1496383800 +0800	am: Add linux framebuffer header include/linux/fb.h
+d98153866f8ce4d5429358d25e70021e038503d6 e6d66aaef001d9ca67caedd29a38257e788da016 irene <ireneyclin@msi.com> 1496383800 +0800	am: MX51: Add IPU driver for video support
+e6d66aaef001d9ca67caedd29a38257e788da016 de6d613fbb2ce56d20314afa11a15d9705a917b0 irene <ireneyclin@msi.com> 1496383800 +0800	am: MX51: Add video support
+de6d613fbb2ce56d20314afa11a15d9705a917b0 a130a387f62acee0b04f8b8b46fecb3116e8969d irene <ireneyclin@msi.com> 1496383800 +0800	am: ENGR00136038: Remove config CONFIG_EMMC_DDR_MODE
+a130a387f62acee0b04f8b8b46fecb3116e8969d 7e75ec9f8260726d94c5b1f22ef9bebe16c324cc irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00133727: uart outputs messy code when kernel starts on mx51
+7e75ec9f8260726d94c5b1f22ef9bebe16c324cc b2d7d4fe69a1ad5cafab1239abb5a76423999135 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00134068 MX51 BBG:Support CLAA WVGA splashimage
+b2d7d4fe69a1ad5cafab1239abb5a76423999135 a949cd02cdf97f0f1c02e95aa05ef347dda301cd irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137214 MX50: Turn on ZQ calib config by default and fix hang problem
+a949cd02cdf97f0f1c02e95aa05ef347dda301cd b1da1f8ada70342f44d3adac885b99a06ae3ef72 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137273 uboot: update the android default env for 2.6.35 kernel
+b1da1f8ada70342f44d3adac885b99a06ae3ef72 468121957b89ac60a4aa59b47ce06675030273e5 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137211 U-Boot MX5x: Incorrect GPL license header on files
+468121957b89ac60a4aa59b47ce06675030273e5 a1e65e7582201f08c9c46da84a0a0a97ef873109 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137390 UBOOT:NAND: BBT not found on MX53 board
+a1e65e7582201f08c9c46da84a0a0a97ef873109 f48f2b811e002591756ddb1f8993763befff887b irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137372 MX53: Switch back to use DCD and update DDR scripts
+f48f2b811e002591756ddb1f8993763befff887b 2829900629a46384c66bbe655c18aca32fc898a7 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137408: Add FAT32 support
+2829900629a46384c66bbe655c18aca32fc898a7 2512a1f00755b4c712bb9790ea9922addd6bb216 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00136863-1: Change mmc framework architecture.
+2512a1f00755b4c712bb9790ea9922addd6bb216 04b57e44def1fda8efaa5e54d9e1ead2464750f2 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00136863-2: Fix mx53 CMD12 issue.
+04b57e44def1fda8efaa5e54d9e1ead2464750f2 20a38e0f96d90da01c03359675618a8f0e277581 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137410 MX53 split board files into different folders
+20a38e0f96d90da01c03359675618a8f0e277581 1a111a9d4f58b678da0236d5978971b528c9b14d irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00136075 MX53: Add SMD board support
+1a111a9d4f58b678da0236d5978971b528c9b14d 9ebe9a77f0d4e969f77a6219ba99539ea7f3ac17 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137497-1 Import new mach-type header file
+9ebe9a77f0d4e969f77a6219ba99539ea7f3ac17 4ad9aafdede32a6e42ac3b022f7b435312a3edd3 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137497-2 MX53: Add LOCO board support
+4ad9aafdede32a6e42ac3b022f7b435312a3edd3 a56df3642185fbcb9504c5798183bc436be4957e irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137596 MX53 Uboot SMC911X driver needs to get mac addr from IIM
+a56df3642185fbcb9504c5798183bc436be4957e 16031b7feffdcc9120e3dd80c4fa20766ab879e4 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137642 MX53 Uboot Align DDR3 script for Loco and SMD boards
+16031b7feffdcc9120e3dd80c4fa20766ab879e4 669cba2fa2da07279881e8a8eb2c05958e075a56 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137604: Change PLL4 to 455MHz for mx53
+669cba2fa2da07279881e8a8eb2c05958e075a56 a996008f4fa81d229c6656fc643d4359e7214984 irene <ireneyclin@msi.com> 1496383801 +0800	am: ENGR00137603 Add mx53_smd_android config for android
+a996008f4fa81d229c6656fc643d4359e7214984 baa821ea8530cc59932f28b92ee7e4dadb052301 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137713 MX53 Uboot SMSC Fix order in which mac addr bytes are read from IIM
+baa821ea8530cc59932f28b92ee7e4dadb052301 2dc4a2ade678022dcc9ec42a7f0fc71cabc812f1 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137766 BBG splashimage:Allocate cmap for panel_info
+2dc4a2ade678022dcc9ec42a7f0fc71cabc812f1 72476f93a20f07323edf8103e0535c9473e64350 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137767 IPUv3 video:Support splashimage with MMU disabled
+72476f93a20f07323edf8103e0535c9473e64350 9998f679ec7999952d46ba5a8ef741a438a34c67 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137841 splashimage:Correct horizontal display position
+9998f679ec7999952d46ba5a8ef741a438a34c67 44b0417058bdd59f6e65730ec54a37e192aa5437 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00136869: SATA device can't init and a typo in sata help
+44b0417058bdd59f6e65730ec54a37e192aa5437 b981790abfe2194660583330880c44ece7d8bec8 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137358: Add saving environment to sata device support
+b981790abfe2194660583330880c44ece7d8bec8 911118ced1bf71006e3fff059deccb1aeae0b0fa irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137791 MX53: Update for MFG tool
+911118ced1bf71006e3fff059deccb1aeae0b0fa d876d0a94cb47c56c1d0965286c04ad134ae9b7f irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137894-1 Add imx pwm driver support
+d876d0a94cb47c56c1d0965286c04ad134ae9b7f e070c105f53965aee1301a79594081d9dbf05e82 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137894-2 MX53: Add ipu base addr and ipu clock
+e070c105f53965aee1301a79594081d9dbf05e82 e64d7b7aeeb585dbf1350a3414047f3fe1519e91 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137894-3 IPU driver enhancement
+e64d7b7aeeb585dbf1350a3414047f3fe1519e91 19f7c3c0ae800af5cb9298285aa67ae0d92093fa irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137894-4 IPUv3 FB: IPUv3 FB driver enhancement
+19f7c3c0ae800af5cb9298285aa67ae0d92093fa 611b19acc952e8c9cc60a81d7d0ca08777b4831f irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137894-5 MX53 ARD:Support splashimage
+611b19acc952e8c9cc60a81d7d0ca08777b4831f 7c0915a09e37d91c1566059ac10607d9ba0e9c41 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137894-6 MX53 SMD:Support splashimage
+7c0915a09e37d91c1566059ac10607d9ba0e9c41 f39269b224a33b634d5db9cfd452604b69c04adb irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00137552 MX53: increase VDDGP as 1.2V for 1GHZ
+f39269b224a33b634d5db9cfd452604b69c04adb 69e9f8a277379ea11e4e47cbdde5b033e9aedfcc irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138040-1 MX53 SMD Android:Support splashimage
+69e9f8a277379ea11e4e47cbdde5b033e9aedfcc 7d896a2c62fddd5e4df85e191e07d9b40465dff5 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138040-2 MX51 BBG Android:Support splashimage
+7d896a2c62fddd5e4df85e191e07d9b40465dff5 5f9e7f8e4b73dcd52d139b526e1c1ffb80574af6 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138040-3 Protect splashimage related stuffs by config
+5f9e7f8e4b73dcd52d139b526e1c1ffb80574af6 1891a246addea614d2b516d47e8bfc8227324cbb irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138148 MX53 TO2.0 EVK: change the default core as 1GHZ
+1891a246addea614d2b516d47e8bfc8227324cbb e76728d4f8844f511b80ddecc193b3c57ed37ae0 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138191 disable the SPLASH SCREEN for android
+e76728d4f8844f511b80ddecc193b3c57ed37ae0 0603d8c3b6ae7f17cfa8db5278c65427508582ae irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138240 Disable splashimage support for PDK
+0603d8c3b6ae7f17cfa8db5278c65427508582ae 0b262c5cb1e63b57eceb9178d5df04ad3bd197b1 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138359 Change uramdisk from 6M byte offset of android fastboot
+0b262c5cb1e63b57eceb9178d5df04ad3bd197b1 a14a84a37da9e32c12d9c7abfb2494250559d2a5 irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138390 android recovery, enlarge uImage size
+a14a84a37da9e32c12d9c7abfb2494250559d2a5 5b8b419c9bdc2983703a2eb77578bc13b7b4d2db irene <ireneyclin@msi.com> 1496383802 +0800	am: ENGR00138468-1 MX5 video:Disable DP/DC/DI/IDMAC before go to kernel
+5b8b419c9bdc2983703a2eb77578bc13b7b4d2db 4e127ee2869e5ddd06eadf97756cc0065aed85b8 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138468-2 Enable splashimage support for several platforms
+4e127ee2869e5ddd06eadf97756cc0065aed85b8 ccfabb56b0a3c192575dbcc11986ccea9f842f99 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138422-1 Fix usb connection failure if do sata init
+ccfabb56b0a3c192575dbcc11986ccea9f842f99 bd5ad24d1b249b20e0b7fdb042d4a802cc80e54b irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138422-2 Add SATA storage support for android fastboot
+bd5ad24d1b249b20e0b7fdb042d4a802cc80e54b 08b9b0348d285c000f07309d302f57df959f2392 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138422-3 Android fastboot: Pass block offset to cmd_fastboot
+08b9b0348d285c000f07309d302f57df959f2392 b18f5fe134339bc2ac05145abb7cb5c55e4cd167 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138534 Disable splashimage support defaultly for PDK
+b18f5fe134339bc2ac05145abb7cb5c55e4cd167 02be8014f503f2c57fea63dd2ad7faaf6d2428cb irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00118558 MX51/MX53: change the boot command of android boards.
+02be8014f503f2c57fea63dd2ad7faaf6d2428cb 20d6f00b1eaa89867f6a09635857dfda941860b3 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138549 Android fastboot: Support eMMC4.4 on imx53_smd
+20d6f00b1eaa89867f6a09635857dfda941860b3 15f352a88e7e9ec4acd7fbe7b3584b6146cf80e6 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138635 MX50 Update mDDR script to use more optimized settings
+15f352a88e7e9ec4acd7fbe7b3584b6146cf80e6 25f8776e43a8ffe4dbbb99e402361f33ef623b7b irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138689 MX50 Update LPDDR2 script to use more optimized settings
+25f8776e43a8ffe4dbbb99e402361f33ef623b7b e3ca04730614a6533dfc9ae1e7abb050e3b67324 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00139120: Correct CONFIG_CMD_MMC to CONFIG_CMD_IIM for iim
+e3ca04730614a6533dfc9ae1e7abb050e3b67324 757529313c71b9d144bf98b00cbb4b8465584e8f irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00139924 mx53 smd &loco: set bootup vdd GP to 1.2v
+757529313c71b9d144bf98b00cbb4b8465584e8f 3c704e69169e42c264e2eb4d11f22d2a66344dfc irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00139747: Read fuse to distinguish between mx53 revA and revB
+3c704e69169e42c264e2eb4d11f22d2a66344dfc f1dde9278381b2d14c16da58826cf276ea08201c irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00138533: Fix sata write operation random failure issue
+f1dde9278381b2d14c16da58826cf276ea08201c 9a8abbbfa06c691cb003ac9bd42f5f54c1244478 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140089 MX53_SMD: update command line.
+9a8abbbfa06c691cb003ac9bd42f5f54c1244478 aa3e31e36af4c42976f7abc9819284a3d9b1f809 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140692 Update for DDR3-based MX53 SABRE Auto boards
+aa3e31e36af4c42976f7abc9819284a3d9b1f809 453accdc3108cc0e7ea90093f4b40cce13bd8cc4 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140750 mx53smd: set the default DDR size to 512MB for android configure
+453accdc3108cc0e7ea90093f4b40cce13bd8cc4 e598b12d70144fca570f01bcd2454b62622e68a1 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140767: Improve mx5x DDR clock function
+e598b12d70144fca570f01bcd2454b62622e68a1 ee01a5a3990211fe754c47b6f318c20bce1dcdb1 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140486 Add SPI NOR Flash M25P32 driver
+ee01a5a3990211fe754c47b6f318c20bce1dcdb1 548bbc54c53b5afb78ff11f0d76580f2884350e1 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140825: Add mx53 to2.1 chip id recognition
+548bbc54c53b5afb78ff11f0d76580f2884350e1 0d3559b8ef39cd79e5ab189baf49076e79dbeb19 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140824 Android: Enable fastboot support for mx50 rdp
+0d3559b8ef39cd79e5ab189baf49076e79dbeb19 c59785c6d37f5f0e2405893bf9472e1cc6d14eb8 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140873: MMC may wrongly regconize 2GB eMMC as high capacity
+c59785c6d37f5f0e2405893bf9472e1cc6d14eb8 a8e989bbfbeed749b4713731ad3e2def7f43a1bb irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140872 Add MX50 RD3 Support
+a8e989bbfbeed749b4713731ad3e2def7f43a1bb 7a001dc7a95c9b7410886fea0b5af3ab94c6ac48 irene <ireneyclin@msi.com> 1496383803 +0800	am: ENGR00140982 MX53 Increase VDDGP to 1.25V for 1 GHz
+7a001dc7a95c9b7410886fea0b5af3ab94c6ac48 c2641780349b7ea514a2a8aa0013f5d53de698b5 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00140537 mx53: update vddgp according to new data sheet
+c2641780349b7ea514a2a8aa0013f5d53de698b5 e927ee703ab8794dcab792998475cef320e36df9 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141000 MX50_RDP: add android recovery support.
+e927ee703ab8794dcab792998475cef320e36df9 175376a99dc79e0667bf780e9b9088d5322b20c4 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141058 MX50_RDP: Android Fix typo in recoevry command line
+175376a99dc79e0667bf780e9b9088d5322b20c4 34e30dbb4f628702d138d4d4fefd68176f4a556e irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141129: Add m25p32 spi_nor support for mx53_smd
+34e30dbb4f628702d138d4d4fefd68176f4a556e 31bc45ef3c8f2d83f66e302b7e35e5e842996b4b irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141157: Add m25p32 spi nor config to mx53_smd_android
+31bc45ef3c8f2d83f66e302b7e35e5e842996b4b 4d3a31ed4fd17e5ddf00774d40c2d32ee612d186 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141363: change mx53 uart clk parent to pll2
+4d3a31ed4fd17e5ddf00774d40c2d32ee612d186 d6e45e74386ca9210258ab655e3e30f9e3e47136 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141410 MX50 RD3: Set GPIO4_16 to Enable DCDC_3V15
+d6e45e74386ca9210258ab655e3e30f9e3e47136 0fc115044827e0db69601e85f2365784d88fad4e irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141556: Fix copyright issue
+0fc115044827e0db69601e85f2365784d88fad4e 5b8263e132a1c2980c0d17ad5880b35af597fe55 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141335-1: Use bypass way to set ddr dll in mx53
+5b8263e132a1c2980c0d17ad5880b35af597fe55 2e30fba5f513bbb69a601e2d6e28b527e45165ed irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141335-2: get more accurate ipg_per clock frequency
+2e30fba5f513bbb69a601e2d6e28b527e45165ed b8e99c040e7ffb6f09da96107ccee15788cdcdcb irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141335-3: Add CONFIG_EMMC_DDR_PORT_DETECT to mx53 and mx50config files
+b8e99c040e7ffb6f09da96107ccee15788cdcdcb fdd3192612ddc8bed4e4bcfd0edaea9cfa3e685a irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00142246 MX50 Update DDR2 script to use more optimized settings
+fdd3192612ddc8bed4e4bcfd0edaea9cfa3e685a 22dc7d2ea99fd6906c7d9770cebd667bff5e2c62 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00142247 MX50: Add PD+3 routine for all DDR types
+22dc7d2ea99fd6906c7d9770cebd667bff5e2c62 976adf1c77e72c9e90981f663e7ceeb88071bf3f irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00142259 set UART2_RXD (GP6_11) to high
+976adf1c77e72c9e90981f663e7ceeb88071bf3f 8b3bc4eab9865f2b71eb5d8592f461ace233f671 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00141885: mx50 and mx53 reboot fail when booting from spi nor
+8b3bc4eab9865f2b71eb5d8592f461ace233f671 fb781e0acca9314100f03eab0a613403dc6b3e50 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00142322: mx53-smd: spi nor: can't erase 0x200000 size
+fb781e0acca9314100f03eab0a613403dc6b3e50 2cf94f149acad7aeb9c8c7fb483fb3bd9c6e880f irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00142497 Android: MX53_SMD: check eMMC and SD recovery file.
+2cf94f149acad7aeb9c8c7fb483fb3bd9c6e880f 148620086cf9e63567a1d5abb4ccf688856c17a0 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00142740 mx50 rdp: mfg support GPMI nand by command line
+148620086cf9e63567a1d5abb4ccf688856c17a0 8b9992a273602a05dff280db19fe1ec22a492df6 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00143178 mx53 ARD DDR3 board: add MFG tool support
+8b9992a273602a05dff280db19fe1ec22a492df6 81ecc9499ec10abc2ece20d8d0318ccfb60e3c7c irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00142995 MX50: Enable uSDHC instead of eSDHC for SDR mode
+81ecc9499ec10abc2ece20d8d0318ccfb60e3c7c 99cc328f6d924682bb423c69ff6f9e451068e3e9 irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00143428 mx53 ard RevB: use internal clock for sata
+99cc328f6d924682bb423c69ff6f9e451068e3e9 60dfb792bb51df18e2d81dde5d06b4b036d9ef6b irene <ireneyclin@msi.com> 1496383804 +0800	am: ENGR00143442 uboot: support android spi boot and mfg on mx50 rd3 board
+60dfb792bb51df18e2d81dde5d06b4b036d9ef6b c6f42ac0320fe07d6c5cae51a0d9a4eacc2a3087 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143457: Don't let ROM copy .bss section
+c6f42ac0320fe07d6c5cae51a0d9a4eacc2a3087 d4ccb84eddcc9dff86eca778b8878b0c25b46cee irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143461 mx51 evk: increase VDDGP as 1.1v for 800MHZ
+d4ccb84eddcc9dff86eca778b8878b0c25b46cee c9417280f578ea1a68214a20ef2e4cfa1dc0c2d6 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143469 mx53 smd: pull down GPIO_9 to reset the board
+c9417280f578ea1a68214a20ef2e4cfa1dc0c2d6 fddba0a939f515ffe9aef1d479e3d02465af38da irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143613 uboot: update the android ramdisk load address
+fddba0a939f515ffe9aef1d479e3d02465af38da ba66df8c98046e1fd3e777ef311577d78ca88705 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143570 mx53: change the default environment setting
+ba66df8c98046e1fd3e777ef311577d78ca88705 d58beed032eef989c861198ea06b185fd3627e1f irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143302 Add mc34708 pmic support on loco/Ripley board
+d58beed032eef989c861198ea06b185fd3627e1f 121b632c2528c9630b9a5b0e3bc0a068779deecc irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143298: Reinit uart after using clk command
+121b632c2528c9630b9a5b0e3bc0a068779deecc c57928c5ba4120474907e3cdb45aeb4659ef6642 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143704: U_BOOT: Nand oobsize is wrong in some nand chips
+c57928c5ba4120474907e3cdb45aeb4659ef6642 70f37bdbf945ce4e1afd1c9bdf86cc7d9452a55d irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00143837 mx50 rd3: support android boot from RD3 NAND device
+70f37bdbf945ce4e1afd1c9bdf86cc7d9452a55d 78c429d23ca53a48ebbdedbce7125dd964fe2b05 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00144060 MX53_SMD: recovery android, update recovery command for emmc.
+78c429d23ca53a48ebbdedbce7125dd964fe2b05 88f80722e63e04afe1b64c8686ca4216dda48ed2 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00144389 mx53 QS Ripley: change VCC from 1.35V to 1.3V QS Ripley board
+88f80722e63e04afe1b64c8686ca4216dda48ed2 da2625784227f015691a57bf0a6ff06be308a032 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00144224: MX53: Add MMU mapping for all peripherals
+da2625784227f015691a57bf0a6ff06be308a032 90a79263d15a68a2dcc7a6e25ad034727d2f736f irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00151187 MX53 SMD: Kernal stopped Usb driver after reseting in stop mode
+90a79263d15a68a2dcc7a6e25ad034727d2f736f b3dd5ad853167e2075aa2bc487d393c9aed07992 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00151892 MX50: Workaround to prevent PLL1 from losing lock
+b3dd5ad853167e2075aa2bc487d393c9aed07992 a9781843e5bbf20ff1d69c4372ad1ee2b0953f0c irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00151966: MX51 - Apply SW workaround for the PLL1 unlock HW issue.
+a9781843e5bbf20ff1d69c4372ad1ee2b0953f0c b766d96327c1d90b3c143eea8e981a4149df1b3d irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00144424 MX6: enable uboot for ARM2(SABREAUTO) CPU board
+b766d96327c1d90b3c143eea8e981a4149df1b3d 12295cb6356aae03ed54dd1a75c4bd4c9843c176 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00139198: iMX61 uBoot add ENET support
+12295cb6356aae03ed54dd1a75c4bd4c9843c176 5bd41952145d45c2ef36cb83c7aa94aa052e759d irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00152241 MX6: enable 1G speed mode for PHY and ENET
+5bd41952145d45c2ef36cb83c7aa94aa052e759d 35cfac11ba29ca3dd6da5f15f40f2a188cf888b1 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00152439: MX51: PLL workaround should be implemented only for PLL1
+35cfac11ba29ca3dd6da5f15f40f2a188cf888b1 fb82e2bbc0f6d489b44133c81bffa34ee25ea8e7 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00139206 MX6 USDHC eMMC 4.4 support
+fb82e2bbc0f6d489b44133c81bffa34ee25ea8e7 40f16283b04cb4ab1abcc8e663f826ecded42002 irene <ireneyclin@msi.com> 1496383805 +0800	am: ENGR00152755 MX6 Switch DRAM init script from plugin to DCD for emmc fastboot
+40f16283b04cb4ab1abcc8e663f826ecded42002 50ff3d5653c1527d0a76813ba0e91e454485409a irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00152907 MX5X: update GPU default cmdline.
+50ff3d5653c1527d0a76813ba0e91e454485409a 6b6d7c11ea96c08b6c69e7db0d467a6d5ecb763f irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00153394 mx50 rd3: make SDHC1 as default boot device for android
+6b6d7c11ea96c08b6c69e7db0d467a6d5ecb763f b9ff8b87975de0c3c860d17e54a15b276ed71870 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00152843 mx51/3: align the android default env with document
+b9ff8b87975de0c3c860d17e54a15b276ed71870 214daff87d0a7707059527ad49be9a3e785ddcb7 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00151695 mx53 ddr3: update ESDREF and MR0
+214daff87d0a7707059527ad49be9a3e785ddcb7 3d2f5444e13562c3b67985dca7a2a223d20e5989 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00151310 mx53 smd: force warm reset as cold reset
+3d2f5444e13562c3b67985dca7a2a223d20e5989 a066be5e8401c21b1c504acc7164445ec63c06f2 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00143438 [MX50 RD3]DCDC_3V15 GPIO change
+a066be5e8401c21b1c504acc7164445ec63c06f2 caac9486441f015b893a0aefe77fbd88f732cd05 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00153597 [MX6]Enbale MMDC low power
+caac9486441f015b893a0aefe77fbd88f732cd05 2cb3f2b36fa0cc9bcba1ff681c0053dfed1c37a1 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00153605 fastboot: uboot cannot be burned to boot partition
+2cb3f2b36fa0cc9bcba1ff681c0053dfed1c37a1 9db31c2096076e5df5ae620d4faecd2913be0c8d irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00153526 mx53 pcba: add pcba board revB support in uboot
+9db31c2096076e5df5ae620d4faecd2913be0c8d 9b70743ce6d04611f20950af0f4b83e7bacc84c3 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00153759 mx51: fix fastboot build failed without boot partition macro
+9b70743ce6d04611f20950af0f4b83e7bacc84c3 80ee549a088ccf53c85c07d3f6041f5b642d876c irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00153761 imx6q ipuv3: improve display quality
+80ee549a088ccf53c85c07d3f6041f5b642d876c 1c0c94d9f9965bd2b802706c26f8b0280ba9885b irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00154400 mx53 pcba: bringup update for RevB board
+1c0c94d9f9965bd2b802706c26f8b0280ba9885b 035853cc0eb3221125654f1eec38b4efc98d15c4 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00154468 mx53 pcba: Add DC-IN power supply support for revB board
+035853cc0eb3221125654f1eec38b4efc98d15c4 352ab089a226dbb19860fcb96d6142f9df7c8d7b irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00154762 mx53_pcba: update Ripley/mc34708 USB/AUX charger settings
+352ab089a226dbb19860fcb96d6142f9df7c8d7b 69b33b536a999b1a95409aa55f26ce8a48e4eb98 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00154396: U_BOOT: Env config adjustment.
+69b33b536a999b1a95409aa55f26ce8a48e4eb98 bdc7316d5b250ff6e0565d84aefd46489793eb56 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00154924 [MX6]Disable some clocks in uboot
+bdc7316d5b250ff6e0565d84aefd46489793eb56 cbe20d4fe884e220032aa0f6c46baf737ac91ce7 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00154998 mx53 pcba: correct the default bootargs
+cbe20d4fe884e220032aa0f6c46baf737ac91ce7 aad0e92db15b75929a3f46b56f9b17b92156b76c irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00155018 mx53_pcba: update Ripley AUX input to 950mA and charge current
+aad0e92db15b75929a3f46b56f9b17b92156b76c 3a8c97e4066657ed2dcbb042a88a01f9d242719a irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00155138 mx53_smd/mx53_loco: Add i2c retry to fix DA9053 i2c NAK issue
+3a8c97e4066657ed2dcbb042a88a01f9d242719a 35326e098acb6aa2b94f0d7b9178f02b7536cf10 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00155156 [MX6]Clean up debug info in uboot
+35326e098acb6aa2b94f0d7b9178f02b7536cf10 ce2cce9bd26b617de806bd4651a4ae6f481c0248 irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00151255 mx53 QS: Enable VUSB_2V5
+ce2cce9bd26b617de806bd4651a4ae6f481c0248 9d962023ba1beae40c19454d37ec56f85bfede1d irene <ireneyclin@msi.com> 1496383806 +0800	am: ENGR00155133: Add sata support for imx6
+9d962023ba1beae40c19454d37ec56f85bfede1d d83107ff7903f413efb48e18201be75739405e3d irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00155240 mx53_smd: Fix a bug that hangs on printf() in board_init
+d83107ff7903f413efb48e18201be75739405e3d cef12b5ef4989f1c695bcd4f72504d7aaabf46e1 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00154672: Change to use rom plugins for mx53 boards
+cef12b5ef4989f1c695bcd4f72504d7aaabf46e1 22ecbded2ab1aa1451f52c8b78f00ee2454a3faa irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00155472 mx53_loco: support both of RevA and RevB in uboot
+22ecbded2ab1aa1451f52c8b78f00ee2454a3faa d4bfdfc3cd6af13883db99757025f5d7da29f732 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00155284 mx53_smd: move I2C access to board_init_late for system hang issue
+d4bfdfc3cd6af13883db99757025f5d7da29f732 a7d06f0aa004a3d5abc5a34755e1d38d9458ece3 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00154666-1: Align u-boot mmc command with community
+a7d06f0aa004a3d5abc5a34755e1d38d9458ece3 73c4381264991d06f8749f0068c6f3e8d3e3c046 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00154666-2: Align u-boot mmc command with community
+73c4381264991d06f8749f0068c6f3e8d3e3c046 90afc160098aef78244899196c5d6e060baaff71 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00154666-3: Align u-boot mmc command with community
+90afc160098aef78244899196c5d6e060baaff71 0563c939065888687118e1b9608109aa9522a466 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00154666-4: Align u-boot mmc command with community
+0563c939065888687118e1b9608109aa9522a466 654af581513734f23f04e8940a27be6aced5f912 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00155739: mx53 evk mmu wrong mapped two csd slots
+654af581513734f23f04e8940a27be6aced5f912 6278ed215887831937e26a8bbc77eb6dc1b952ab irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00155279: Change ESDCTL_0x82228080 to ESDCTL_0x82226080 for mx35
+6278ed215887831937e26a8bbc77eb6dc1b952ab 6686a203c5e10ae73b73123a9e92debbfa1893a0 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00155283: Set dpgdck0_2_en to 0 when freq is lower than 300MHz
+6686a203c5e10ae73b73123a9e92debbfa1893a0 77809219d2a4dbd7b02632df012e8e16d2747b08 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00139254: Enable MX6Q Uboot Splash Screen
+77809219d2a4dbd7b02632df012e8e16d2747b08 5c84f2b55ac07d09be213e520a6d84a3e812c6e4 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00156034: Fix mx53 evk build error
+5c84f2b55ac07d09be213e520a6d84a3e812c6e4 649ba920d1f4b01298119dbafcf0b33f53de811f irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00156098 mx53_smd/mx53_loco: DA9053 I2C SDA stuck low issue on bootup
+649ba920d1f4b01298119dbafcf0b33f53de811f 2b1292620155afd05315c371de26d4ecef60dc36 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00156304 eMMC: Need to update partition config after changing boot partition
+2b1292620155afd05315c371de26d4ecef60dc36 25a2c1cb10f41fcb4c36b1b3118894373704e956 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00156389: turn off child clocks before reconfigure perclk_root
+25a2c1cb10f41fcb4c36b1b3118894373704e956 31c137061f8b8b9c680512d676be565c691423d3 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00156405 ESDHC: Add workaround for auto-clock gate errata ENGcm03648
+31c137061f8b8b9c680512d676be565c691423d3 cf8071437e46fd1ea27b97cda82fba99762d9155 irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00156670-1 ESDHC/USDHC: Remove delay before each cmd and some bug fixes
+cf8071437e46fd1ea27b97cda82fba99762d9155 4800ff638cfbf4c3025685a0892055cacbee8aff irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00156670-2 MMC: Fixed some bugs in common code
+4800ff638cfbf4c3025685a0892055cacbee8aff ebcda4363d7dd7e20b8d4f519bb37b501969d80e irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00155569 mc34708: change global reset time as 4s of LOCO and PCBA
+ebcda4363d7dd7e20b8d4f519bb37b501969d80e 0af71ecb1f5e02011767236afd2c99eeb7ec6f6b irene <ireneyclin@msi.com> 1496383807 +0800	am: ENGR00157419: Correct default environment's mmc device in mx6q
+0af71ecb1f5e02011767236afd2c99eeb7ec6f6b 0b02b384d5d5db5654b48f06a8af4497a866ef7d irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00157468: Fix default environment's "mmc dev" type error
+0b02b384d5d5db5654b48f06a8af4497a866ef7d 070566ff68cf15554cd88f78a7e516e080b07973 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00157538 remove VDIG_PLL setting in plug-in code
+070566ff68cf15554cd88f78a7e516e080b07973 3839e351dd1bde04c121705a7b120ac998c15ba6 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00158184 mx53 smd: use highest value for unknown board revision value
+3839e351dd1bde04c121705a7b120ac998c15ba6 a3f77868e7fcbc63ac7e91b16ca5009b2a73456f irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00159696 [MX6]Enable lpddr2 board
+a3f77868e7fcbc63ac7e91b16ca5009b2a73456f 539693c8f9873736eadcf9041d2f5068d7f802c4 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00159740 Android: Fastboot: enlarge max image size to 148MB
+539693c8f9873736eadcf9041d2f5068d7f802c4 43137f63bac4110f324d5e3d3c52d5fb8ff64864 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00159845 [MX6]lpddr2 board, put MMDC into power saving mode
+43137f63bac4110f324d5e3d3c52d5fb8ff64864 17fb790d30c6e454160a1976ac548e0a638664a6 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00139279-1 MX6Q: add env_embedded module for CONFIG_ENV_IS_NOWHERE
+17fb790d30c6e454160a1976ac548e0a638664a6 3ce5c8e23f64d3f8b589922fd2d23c11b5a6b851 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00139279-2 MX6Q: add mfgtool support
+3ce5c8e23f64d3f8b589922fd2d23c11b5a6b851 26bad68e3a538952471dc94615fb563a4f617b66 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00139279-3 MX6Q: invalidate the D-CACHE
+26bad68e3a538952471dc94615fb563a4f617b66 75b3e9912451ab7a89473fd967ef3cc4f70068f3 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00156930: Update MX35 DDR2 scripts
+75b3e9912451ab7a89473fd967ef3cc4f70068f3 3d3ddf2f20c18df705aa55dbddf021aa8bdb1073 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00156934: Update mx35 AIPS max dbg m3if esdctl settings
+3d3ddf2f20c18df705aa55dbddf021aa8bdb1073 6916db28ac6ddb442a52d962414ef59a9a75e086 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00160507 Update the IOMUX implementation for MX6
+6916db28ac6ddb442a52d962414ef59a9a75e086 d6e73146d0df54b3289f4b89f8b0840541203bc5 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00160725 fastboot: fix the serial number display error
+d6e73146d0df54b3289f4b89f8b0840541203bc5 c3ad0e0cddd67c092669b2459f90fe9e6db73424 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00160399 Added support for the MX6Q Sabre-lite board
+c3ad0e0cddd67c092669b2459f90fe9e6db73424 dfecc08cbce6477784d481696520beb5b7a7ee32 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00160514: clean up compiler warning for mx6q
+dfecc08cbce6477784d481696520beb5b7a7ee32 f4d26f4b01469fba145849cb40c4301ff055b7c2 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00139221 USDHC Add SDXC UHS-I support
+f4d26f4b01469fba145849cb40c4301ff055b7c2 13894e83f34f36a0bedfef2dada6328cb36c5d6d irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00161004 MX6Q Uboot Rename sabreauto to arm2 board
+13894e83f34f36a0bedfef2dada6328cb36c5d6d f7c1e1313da6ca89087c1416929c1a24d1cd4342 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00161125 Update MX6Q Sabrelite config to boot from MMC by default
+f7c1e1313da6ca89087c1416929c1a24d1cd4342 c96e6cff21af8975e3986334462325bce58e1a27 irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00161133: Add spi-nor support for mx6q
+c96e6cff21af8975e3986334462325bce58e1a27 b50af02f7f07d8c10ecacc3256014758f341dcbe irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00161126 Enable Hush parser in MX6Q Sabrelite config
+b50af02f7f07d8c10ecacc3256014758f341dcbe 693fe05f9fa08daeb2945e6590da6696047bfd2d irene <ireneyclin@msi.com> 1496383808 +0800	am: ENGR00139215 iMX61 Uboot support blow fuse
+693fe05f9fa08daeb2945e6590da6696047bfd2d c0903d9c413db69b4410af2c8555f543d7b006e3 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161277 Add fuse access capability for MX6 Sabre-lite
+c0903d9c413db69b4410af2c8555f543d7b006e3 7936e3d002e895d02c1ea102c09709f5d588710a irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161294 Update MX6 code to read MAC address from fuses
+7936e3d002e895d02c1ea102c09709f5d588710a 830ba3e58869c362590fdf1f86fc434b04af4575 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161254 MX6Q: Add NAND support in Uboot
+830ba3e58869c362590fdf1f86fc434b04af4575 2260eabf4f2156715bc64dde8c008e8ebe229977 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161296 Update the MX6 Sabre-lite environment option in the config file
+2260eabf4f2156715bc64dde8c008e8ebe229977 c46e0d459b650cd43ddec8873aa82763db6ba928 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161373 Move the MAC address read from fuse code to MX6 SoC file
+c46e0d459b650cd43ddec8873aa82763db6ba928 bca84c3b552b907ce8158913fb435722c918720b irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161317 - MX6Q: Integrate plugin and dcd DRAM init script in uboot.
+bca84c3b552b907ce8158913fb435722c918720b 738e1a0f48712b880903c4e3d797d5b55a0b55a1 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00157106 uboot mx6q: adjust IPU axi-id0/1 Qos value
+738e1a0f48712b880903c4e3d797d5b55a0b55a1 c1e2d00ccb706ac0696ba1200a95c5ccf30bf962 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161415: mc34708: set 1p5
+c1e2d00ccb706ac0696ba1200a95c5ccf30bf962 122d2f43d6e4637a7a966033ad6d8308478c7a14 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161354 MX6Q ARM2 U_BOOT: "mmc dev 0" or "mmc dev 1" cmds will hang
+122d2f43d6e4637a7a966033ad6d8308478c7a14 87eca4fa522f971f44747b3c277b1cf5c7367d66 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161691 Manufacturing update for Sabre-lite
+87eca4fa522f971f44747b3c277b1cf5c7367d66 a3ff4b08947a62ae67703f2444cb08408afeadef irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161846 uboot mx6q_arm2: adjust IPU axi-id0/1 Qos value
+a3ff4b08947a62ae67703f2444cb08408afeadef 2efe48f61af6e41ed5e4833ca861b7bdde465e1d irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161860 Fix build issue when enable NAND in Uboot
+2efe48f61af6e41ed5e4833ca861b7bdde465e1d d1a9ea2b3fba5b9b0febb6c6e7402c474767880e irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00161852: remove u-boot build warnings for mx6q
+d1a9ea2b3fba5b9b0febb6c6e7402c474767880e f3d9d43f70ec726df0d14f50cdfff7690f204e0d irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00155891 : Fix reboot stress test failed issue
+f3d9d43f70ec726df0d14f50cdfff7690f204e0d 72f55e76f098199edd5d0e93d03a9ed894fcf169 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00162437 uboot mc34708 pcba : add spi support on mc34708
+72f55e76f098199edd5d0e93d03a9ed894fcf169 c1f8391fd03e576ccfbf69f1c1a81531fcbeb7b6 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00162570: MX6-Increase VDDSOC_CAP voltage to 1.2V
+c1f8391fd03e576ccfbf69f1c1a81531fcbeb7b6 93fd01e9de486c62cc13c27a7ca2915ec045c2cb irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00162491 Android: MX53_SMD: enter recovery mode by key.
+93fd01e9de486c62cc13c27a7ca2915ec045c2cb e7aa2e78ad5ea5215aec28d9e046926380f173c1 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00162709 Add Support for MX6Q Sabre Auto
+e7aa2e78ad5ea5215aec28d9e046926380f173c1 8d200b62f291787a96368a58f19c7810b55a6c1e irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00162874: Add enet clk change support for mx6
+8d200b62f291787a96368a58f19c7810b55a6c1e e6f9fe16aefb79e370158ed1bd5bf5e2c9303a3e irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00162938 MX5: Add download_mode command in uboot to enter MFG download mode.
+e6f9fe16aefb79e370158ed1bd5bf5e2c9303a3e 0ae283e1c01ceeecaf07c78d6b7545bf19a5ef6b irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00162937 - FEC: Fix FEC cannot load kernel accroding tftp.
+0ae283e1c01ceeecaf07c78d6b7545bf19a5ef6b 80f1e4414e6a249882a6995b993a361a5d9b2eb7 irene <ireneyclin@msi.com> 1496383809 +0800	am: ENGR00162717 mx53_smd/mx53_loco DA9053: reset da9053 i2c and add dummy write
+80f1e4414e6a249882a6995b993a361a5d9b2eb7 d6fcb33fa662df4ea79842d9897124fe9cec3717 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00163040 - FEC : Fix ethernet cannot work after system sleep.
+d6fcb33fa662df4ea79842d9897124fe9cec3717 2d379135973707a16ecb9cc49851fbb7e5715d6a irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00163239-1 mc34708: fix not charging issue in uboot
+2d379135973707a16ecb9cc49851fbb7e5715d6a df64606cb47317ad5c473d13296581f116e5f662 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00163239-2 mc34708: enable extra charging circuit
+df64606cb47317ad5c473d13296581f116e5f662 f94d706c2fb8fe5be6042eb7855fc965370a3352 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00163370 Android: uboot: mx53_smd fix warnning message
+f94d706c2fb8fe5be6042eb7855fc965370a3352 3e5c265750acea6e7051bd0e98aee22ced4dc91d irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00163513 MX6Q-UBOOT : Add download_mode cmd
+3e5c265750acea6e7051bd0e98aee22ced4dc91d 550b71f9df1dd4a2f16af0d8715c69cdd3b88380 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00163704: MX5X: add i2c recovery function in board_lateinit.
+550b71f9df1dd4a2f16af0d8715c69cdd3b88380 8422d9fe10c854a7e5789f899e7b4d6b6f1d9eda irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00169500 mc34708 mx53_loco: 4s power off in QS board
+8422d9fe10c854a7e5789f899e7b4d6b6f1d9eda 49da9e8f787a20a9a82764152746a0f16820013e irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00169654 mx53_pcba: enable DDR auto-calibration
+49da9e8f787a20a9a82764152746a0f16820013e 8abe366c1b1b50d3570d50ed21ee985a8d96daf5 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00169655 pcba : merge i2c recovery patch to pcba
+8abe366c1b1b50d3570d50ed21ee985a8d96daf5 a0808f209a2920145c454d489cfc6ec045252877 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00169741 UBOOT : DDR3 initialization based on the MX6Q ARD
+a0808f209a2920145c454d489cfc6ec045252877 c0eff5ffb95b5844cdfce1b34e7be9482da4a2e9 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00169919 MX6Q ARM2 U-Boot : Support Pop CPU Board
+c0eff5ffb95b5844cdfce1b34e7be9482da4a2e9 22fd9d0bfa3c0efa26b96fa62981f1146187f927 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00170299-1 Android: add support fastboot function
+22fd9d0bfa3c0efa26b96fa62981f1146187f927 39edcbd4b7a73a3e491bf6eae67e8ea8b1a17546 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00170299-2 Android:MX6Q_SL: add board support for recovery and fastboot.
+39edcbd4b7a73a3e491bf6eae67e8ea8b1a17546 252c812fd38c7cad6981f05042bf513a4630c3e9 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00170299-3 Android: add android board configure file.
+252c812fd38c7cad6981f05042bf513a4630c3e9 644e598b5983745af79fd22d2e951eaee75cd811 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00170372 mx6q sabrelite: make TF card as default boot media
+644e598b5983745af79fd22d2e951eaee75cd811 3179058080c05de6135b6475adac33f8cce54fa1 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00170405 Android: MX6Q_SL: Fix recovery key detection
+3179058080c05de6135b6475adac33f8cce54fa1 b26b32de83c0ba5f1dab1e78b2f79b07c6d9b239 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00170516 Enable the master mode for ENET PHY on MX6 Sabrelite
+b26b32de83c0ba5f1dab1e78b2f79b07c6d9b239 514a9b0dbb72e1d59197ecfc8a3c450936d00a2c irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00170644: Enlarge mmc read size to 4M in default env
+514a9b0dbb72e1d59197ecfc8a3c450936d00a2c 54272dec8c007c73336dd7fb5a25c863eed68d12 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00169544 - FEC : fix "imx5x bootp command cannot work well".
+54272dec8c007c73336dd7fb5a25c863eed68d12 83b1b30ac0e3d913c888868b3174f79695986e79 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00163697 - FEC : Adjust MX53 Network stream throughput.
+83b1b30ac0e3d913c888868b3174f79695986e79 529825e39aefda55cd67a01261c910401ebcf77d irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00160621 [MX6]Workaround for reset issue
+529825e39aefda55cd67a01261c910401ebcf77d b74644a970ed8bc3dc7a6d438d5d16ae05c8aeb9 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00162642: Fix bug in setting VDDSOC voltage
+b74644a970ed8bc3dc7a6d438d5d16ae05c8aeb9 7d5ba29b18ec1526b01cd9d827cffd21c28a42a1 irene <ireneyclin@msi.com> 1496383810 +0800	am: ENGR00170768 Android: Fix fastboot can't used on MX6Q SL MMC1 device.
+7d5ba29b18ec1526b01cd9d827cffd21c28a42a1 d843aa8d405090441313edac49c5fc2b0a514f40 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00170837 [MX6]Add temperatuer check into uboot
+d843aa8d405090441313edac49c5fc2b0a514f40 7b0af9c180c75c5b1dbf48b5eee1bdbd43860907 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00170876 Android: align boot commands with user guide.
+7b0af9c180c75c5b1dbf48b5eee1bdbd43860907 8659f9942a29ee9abdd095f72a1f0a6784098cac irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00171008 MX6Q/MFGTOOL : disable the workaround for MFGTOOL
+8659f9942a29ee9abdd095f72a1f0a6784098cac d5d9dd7bc9e6972ea3a35625cb451c55db540652 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00171091 [MX6]Remove workaround for reset issue
+d5d9dd7bc9e6972ea3a35625cb451c55db540652 af521185509f1cd3dbe3dce5b1deff96c80cb70e irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00171115 add fec support in mx6q sabreauto board
+af521185509f1cd3dbe3dce5b1deff96c80cb70e 4bfd9ac3f61520982c2fbea48e22eccbd5d2944d irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00171622 - FEC : workaround for Gb enet in sabrelite board.
+4bfd9ac3f61520982c2fbea48e22eccbd5d2944d f1ba5cbfd12a8fe7d2abaa39213eae5b3c88c4f5 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00171633 MX6Q: config: android: update default config.
+f1ba5cbfd12a8fe7d2abaa39213eae5b3c88c4f5 0822ddbed21020e1a874a3b6e56ea3b61a204b5c irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00171872 Android: update sabrelite default config fix a typo.
+0822ddbed21020e1a874a3b6e56ea3b61a204b5c 933a4faa03a80004be687f708afe4434f489654d irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00171771 [MX6]Need to power down PCIe by default
+933a4faa03a80004be687f708afe4434f489654d 0b73c509542153bd1b4d91e4c98604332107e2bb irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00171968 mx6q sabrelite: fixup the sabrelite default bootargs typo
+0b73c509542153bd1b4d91e4c98604332107e2bb 341f56d07242392cbf5659c39c7820fdd76a284a irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00172490: FIX: PMIC registers may not be accessible in u-boot via SPI
+341f56d07242392cbf5659c39c7820fdd76a284a 9befe083d3d54ee70cd05229b65aeefd86592b25 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00172541 Delete bootcmd_base from the MX6 Sabre-lite config
+9befe083d3d54ee70cd05229b65aeefd86592b25 49712556c06df3e2b6074a07b1a4323f66e9b771 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00172343 Add suport for i.MX 6Q Sabre Smart Device
+49712556c06df3e2b6074a07b1a4323f66e9b771 f3568328eb72bfdfdf2f6a849d920a724aa0d971 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00173579 Revert FEC: Fix FEC cannot load kernel accroding tftp.
+f3568328eb72bfdfdf2f6a849d920a724aa0d971 5f3e56039c1db9d30350a316ad1ad8ef36aef21e irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00173659 MX6Q_UART Change Phyisical to Virtural Port Mapping
+5f3e56039c1db9d30350a316ad1ad8ef36aef21e 4aabe5c0cc5c812cf3a296f30a69c2d63c6325d1 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00173966-1: i.mx6dl: add the iomux head file
+4aabe5c0cc5c812cf3a296f30a69c2d63c6325d1 fb1bffabf86e58cca7a0a9032a1ab53c0b80d52e irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00173966-2: fec: add i.mx6dl support
+fb1bffabf86e58cca7a0a9032a1ab53c0b80d52e ffd74228b48b401754895aa5c5a2361533da1fb6 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00173966-3: ARM2: i.mx6dl: add the DDR script
+ffd74228b48b401754895aa5c5a2361533da1fb6 348cba18d6d843b639858d4c1901ba63f8c3b951 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00173966-4: ARM2: add initial support for i.mx6sdl
+348cba18d6d843b639858d4c1901ba63f8c3b951 c27ea520a378ecc6d78f81f0c6398922fc4effb8 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00174055: i.mx6dl: ddr: update ddr script to 400M_64bit_v1.1
+c27ea520a378ecc6d78f81f0c6398922fc4effb8 c793c1aa9ad075193bf937eb8e98dfe4a638d0fd irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00174155: i.mx6sdl: add 32bit DDR support on ARM2 board
+c793c1aa9ad075193bf937eb8e98dfe4a638d0fd e9bf171af1cdcf8f3c23ff292dc9ef5308a05166 irene <ireneyclin@msi.com> 1496383811 +0800	am: ENGR00174155-2 i.mx6sdl: enable i.mx6solo config by default
+e9bf171af1cdcf8f3c23ff292dc9ef5308a05166 61df7976f2c557baf550334abf02004756d873a3 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174155-3 i.mx6sdl: enable i.mx6solo config by default
+61df7976f2c557baf550334abf02004756d873a3 a11aeba2a965f427e55ce93e3396a50548fcfed2 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174221 imx6dl remove unnecessary configs for NAND
+a11aeba2a965f427e55ce93e3396a50548fcfed2 a25df2658bac2e0c0e2be277b5d2f89008327497 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174104-1: Add conditional CONFIG to fix build break
+a25df2658bac2e0c0e2be277b5d2f89008327497 33650fc37ceaa2a09e3033a6e2dbbb07bf4eacc2 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174104-2: Add mx6dl iram boot config
+33650fc37ceaa2a09e3033a6e2dbbb07bf4eacc2 895e1ed431d2656c113f62bcfcd8b0bee9ef59ab irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174104-3: Fix mx6 iram boot configs' issue
+895e1ed431d2656c113f62bcfcd8b0bee9ef59ab 9c0825aef96fa84517ead06ee8bd6bf2db29ed73 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174104-4: Fix iram build error in imx6
+9c0825aef96fa84517ead06ee8bd6bf2db29ed73 b17bc8025d39460b313411d49f3fa721ce218441 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174230: Move partition command from nand to sata in mx6
+b17bc8025d39460b313411d49f3fa721ce218441 8c3548b32a08a585ec5388fd311d48133a4e9c90 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174407 imx6dl: add MFG tool support
+8c3548b32a08a585ec5388fd311d48133a4e9c90 5d36805ab264dce370dd289472bcde62113c4970 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174326 MX6Q_SABRESD: add android related function and config.
+5d36805ab264dce370dd289472bcde62113c4970 45945c1c6d508ff512f9c4bbcce6566b04726eee irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00139213: Add read and change voltage support for mx6
+45945c1c6d508ff512f9c4bbcce6566b04726eee e4c4162e5228d856caf5aeeebc453f1f21908678 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174626: Fix cmd_regul build error
+e4c4162e5228d856caf5aeeebc453f1f21908678 6634bef4b2cf2dee81bb78849e188b411686d4bb irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174625: Remove build warnings for mx6q
+6634bef4b2cf2dee81bb78849e188b411686d4bb c8015c23d3f376e7af7bd4bb57f87be2face8b0f irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174536-1 booti: add booti command support.
+c8015c23d3f376e7af7bd4bb57f87be2face8b0f 5ca92234971f24a0b83c543b9527123c8de332f4 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174536-2 MX6Q_SABRE[SD/Lite]: change bootcmd to booti
+5ca92234971f24a0b83c543b9527123c8de332f4 20ca6dd123b844adc48b377160e440c7463a8df5 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174821 booti: fix build error when not configure android partition.
+20ca6dd123b844adc48b377160e440c7463a8df5 f7313ed42564c3d5ebfcfd43974781a3cdfd1f24 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174841 [U-Boot]Add a command to erase any pre-saved environment
+f7313ed42564c3d5ebfcfd43974781a3cdfd1f24 5d111169b096987221ba45c9a8968113e4255097 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00174868 mx6dl arm2: change the default console as ttymxc3
+5d111169b096987221ba45c9a8968113e4255097 0917bee0e5c833d30bdf92e89b0975d4cf7a51d4 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00175091 MX6Q_SABRESD: android: add recovery check
+0917bee0e5c833d30bdf92e89b0975d4cf7a51d4 b8f17bdefae63a4871d3f76f8ca2f6ab83c28399 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00175117 [MX6DL LPDDR2 Board] Apply Initializtion script and enable U-Boot
+b8f17bdefae63a4871d3f76f8ca2f6ab83c28399 f30f259280469cac25f9de6f2ec339f992b656a9 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00175981-1 mx53 smd: add CPU 1.2GHz configuration
+f30f259280469cac25f9de6f2ec339f992b656a9 7a3d5a6f2c59be064eba60b4a21aa6bdab468712 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00175981-2 mx53 smd android: fix build error
+7a3d5a6f2c59be064eba60b4a21aa6bdab468712 e8182c3d3ba224242bbc630a6fd84bed74bd7e7c irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00176186 mx6dq ARD: add MFG tool support
+e8182c3d3ba224242bbc630a6fd84bed74bd7e7c 432da8c3e29f8a893b400e31ff80fe34743891be irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00176235 mx6 ARD: Add splash screen support
+432da8c3e29f8a893b400e31ff80fe34743891be d2503b8dbeae66ed7f5d241b912e9cea40acd560 irene <ireneyclin@msi.com> 1496383812 +0800	am: ENGR00176328 change fastboot vid to google orignal
+d2503b8dbeae66ed7f5d241b912e9cea40acd560 dfbdce0fe5ab2d0c66caba9f0236855e1049a099 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-1 mx6solo sabreauto: add configuration support
+dfbdce0fe5ab2d0c66caba9f0236855e1049a099 6554cfcdb25444d1443b77ff98e6aff6e5d325a2 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-2 mx6solo sabreauto: add DDR3 support
+6554cfcdb25444d1443b77ff98e6aff6e5d325a2 b6bc12054b59e003ba5967b53f883ed946c9c790 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-3 mx6solo sabreauto: add board support
+b6bc12054b59e003ba5967b53f883ed946c9c790 ca08f71f39bc21fae9dc09d50068f87daaa8b210 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-4 anatop: add support for mx6solo/dl
+ca08f71f39bc21fae9dc09d50068f87daaa8b210 3dc4e22be7841eabb7564b6cc13d003c8ae33bb6 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-5 mx6solo sabreauto: set system_rev
+3dc4e22be7841eabb7564b6cc13d003c8ae33bb6 8b4f9bbd950f1ec65d5a94f119a2388888091e59 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-6 mx6solo sabreauto: remove build warning
+8b4f9bbd950f1ec65d5a94f119a2388888091e59 93a87ad15d0a310398cc9af532fcf59c385ed566 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-7 bootm: remove build warning
+93a87ad15d0a310398cc9af532fcf59c385ed566 02e48991edb160ff85c005518b49277bc5e9cf3a irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-8 cmd_bootm: remove build warning
+02e48991edb160ff85c005518b49277bc5e9cf3a 664d4a9e66d58e00bb6d12a0febd4a46e3d75fb1 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176347-9 fec : increase wait time for phy link
+664d4a9e66d58e00bb6d12a0febd4a46e3d75fb1 f0df328efbc827eb4e175c6aaddcee8c27b66c95 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00177070 android: isolate booti command to fix build.
+f0df328efbc827eb4e175c6aaddcee8c27b66c95 87c2ec090319cacc06323688b09989797c3d7428 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176834-1 - [imx6] : add fsl_system_rev to check chip and board.
+87c2ec090319cacc06323688b09989797c3d7428 21b16c035fc8b5e8845cec7f46384e152de37c52 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176834-2 - i.MX6DL sabresd: board bringup
+21b16c035fc8b5e8845cec7f46384e152de37c52 8e5c5119368968b6d6e3f990c7f4e7c04a2b44b1 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176834-3 - i.MX6DL sabresd : DDR init script update
+8e5c5119368968b6d6e3f990c7f4e7c04a2b44b1 ea0c2b9d76996fb7f4aa0b04205a2400f0dcb496 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00177244 - imx6 : Use common fsl_sys_rev to check board reversion
+ea0c2b9d76996fb7f4aa0b04205a2400f0dcb496 b2a52bd399df07810bb00a28d8bc6ef106bdb942 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00177587 MX6Q_ARM2: add android config for this board.
+b2a52bd399df07810bb00a28d8bc6ef106bdb942 cbe1b65d5e08c2951ebfe4d8d8d31671604409dd irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176837-1 - imx6 sabreauto : add net support for revb boards.
+cbe1b65d5e08c2951ebfe4d8d8d31671604409dd 7af356a67e7d853c7f0998ebe1a3ca74d0850e0e irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176837-2 - imx6 sabreauto : add i2c3 support for revb board.
+7af356a67e7d853c7f0998ebe1a3ca74d0850e0e 4c06822c4a1c6fce2b02a188b85579812f4455b7 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176837-3 - FEC : detect phy ID to match the phy type.
+4c06822c4a1c6fce2b02a188b85579812f4455b7 9cbcc997eb8e86dd86cb6ca5b25cd8aa419cf04c irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00176837-4 - imx6solo sabreauto : remove Ethernet phy MICREL macro.
+9cbcc997eb8e86dd86cb6ca5b25cd8aa419cf04c 9e0ceb7b98ded0a0eb1c2dfabcb3b8213cbaf2bd irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00177657: Add mfg configs for mx6dl sabresd and mx6solo sabreauto
+9e0ceb7b98ded0a0eb1c2dfabcb3b8213cbaf2bd e2b8f4585fb7faff772f85c69191988d84afaf7a irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00177783: i.mx6dl: sabresd revB: update DD3 init script
+e2b8f4585fb7faff772f85c69191988d84afaf7a 4852c7340ea8384615da4cec6a0eeb3fa3f95963 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00177905 : i.mx6q sabresd: add fec auto discover phy configuration.
+4852c7340ea8384615da4cec6a0eeb3fa3f95963 0838fa4563274b89fb108f61309c95ba80da7ea7 irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00177909: mx6q/mx6dl SabreSD: SPI-NOR flash not probed as expected
+0838fa4563274b89fb108f61309c95ba80da7ea7 b7df78d3646a7fd593cb45bd2fe4d19a831f459a irene <ireneyclin@msi.com> 1496383813 +0800	am: ENGR00177954 mx6solo sabreauto: remove MMDC1 setting
+b7df78d3646a7fd593cb45bd2fe4d19a831f459a bdb309b8a45ebb26e4a07a84864367ac81daad45 irene <ireneyclin@msi.com> 1496383814 +0800	am: mmc: CMD7:MMC_CMD_SELECT_CARD response fix
+bdb309b8a45ebb26e4a07a84864367ac81daad45 2949c761306e893c1b4e2990dc0a2972eab25bfa irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00178547 i.mx6dl sabresd: add android config file
+2949c761306e893c1b4e2990dc0a2972eab25bfa 7b41d2869d6eeb1ba4c3444bb200ab8b5be4df6f irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00178024 mx6solo sabreauto: add nosmp arm_freq=800 by default
+7b41d2869d6eeb1ba4c3444bb200ab8b5be4df6f ebf04e97ba06bc5f8aa6b96411a3b964f26e0cf9 irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00178558 mx6solo sabreauto: integrate DDR3 script V1.1
+ebf04e97ba06bc5f8aa6b96411a3b964f26e0cf9 d9115b2bef9983d9989ee0fb2f1c0392267685a4 irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00176834-4 - [imx]:add macro define to include chip head file
+d9115b2bef9983d9989ee0fb2f1c0392267685a4 7283ac3304c0b190f9291443414ad5b068aee24c irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00176837-4 - FEC:enable some macro define for all chip
+7283ac3304c0b190f9291443414ad5b068aee24c 085c9238fb3fbda5a41c2532531bd8e0bcf23c5d irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00139223-1 [MX6Q] Secure Boot, enable HAB on ARM2 platform (Stage 1)
+085c9238fb3fbda5a41c2532531bd8e0bcf23c5d 4e5788f66052dc3a6aed224b909ea4807e45b3bd irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00139223-2 [MX6Q] Secure Boot, enable HAB on ARM2 platform (Stage 2)
+4e5788f66052dc3a6aed224b909ea4807e45b3bd b92883f7b3a06d920b77ac1c4b4b8764f3e8abc3 irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00178989: Disable secrity boot configs.
+b92883f7b3a06d920b77ac1c4b4b8764f3e8abc3 3e82216cc9190d334c0d778e0a8d5d14c069bedb irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00176537 mx6qsabreauto: i2c3_sda route setting
+3e82216cc9190d334c0d778e0a8d5d14c069bedb 8d38583f68945f77be78be8d036f63bf2c1e8282 irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00179150 MX6Q_ARM2 HAB Boot : avoid uImage authentication on un-fused chip
+8d38583f68945f77be78be8d036f63bf2c1e8282 65eada329ae7fe38447dcf9e04ff2dc3a8c2e204 irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00179437-1: u-boot: iomux: NO_PAD_I/NO_PAD_MUX not set corretly
+65eada329ae7fe38447dcf9e04ff2dc3a8c2e204 24c7347a87a524a5e9698553d6ddc8acb026cb25 irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00179437-2 u-boot: mx6q: iomux: code clean up
+24c7347a87a524a5e9698553d6ddc8acb026cb25 f4cd220b3feefda50bccdca4dbcd094c61535b1a irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00179000 i.mx6q/dl: sabresd: Add the splash screen support
+f4cd220b3feefda50bccdca4dbcd094c61535b1a e0b33734ef821a5446de5713ed0dca868ab2c57f irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00179013 : MX6Solo/Quad : SABREAUTO: Add Parallel NOR Support
+e0b33734ef821a5446de5713ed0dca868ab2c57f e81f80d43eab0fbb34ca4f1bbc0a303da74597ac irene <ireneyclin@msi.com> 1496383814 +0800	am: ENGR00179762: i.MX6: print the SOC revision correctly
+e81f80d43eab0fbb34ca4f1bbc0a303da74597ac 5e93c3f28970cc3ee02568ff1963b1896c953e8e irene <ireneyclin@msi.com> 1496383814 +0800	am: MX: Added Freescale Power Management Driver
+5e93c3f28970cc3ee02568ff1963b1896c953e8e cdad928ffeac97fa962bbd147f5d0a02fb9f7cf6 irene <ireneyclin@msi.com> 1496383814 +0800	am: misc:pmic:core New generic PMIC driver
+cdad928ffeac97fa962bbd147f5d0a02fb9f7cf6 39442ef1dd611add21cfc96f57506272a60d874a irene <ireneyclin@msi.com> 1496383814 +0800	am: misc: pmic: use I2C_SET_BUS in pmic I2C
+39442ef1dd611add21cfc96f57506272a60d874a 6f79adcbb93ebed644689036049ed4c8dc3cf554 irene <ireneyclin@msi.com> 1496383814 +0800	am: misc: pmic: addI2C support to pmic_fsl driver
+6f79adcbb93ebed644689036049ed4c8dc3cf554 77bc4da30b2eb89f56b63e8cacfb77749096428e irene <ireneyclin@msi.com> 1496383814 +0800	am: misc: pmic: fix regression in pmic_fsl.c (SPI)
+77bc4da30b2eb89f56b63e8cacfb77749096428e e9e4fcdf3da298888d92a0cb31a1f1a2a24b3286 irene <ireneyclin@msi.com> 1496383815 +0800	am: Add generic gpio.h in asm-generic
+e9e4fcdf3da298888d92a0cb31a1f1a2a24b3286 8a0d0ca1c23f22260c18a65bcc0b198ea950eedc irene <ireneyclin@msi.com> 1496383815 +0800	am: IMX: uniform GPIO interface using GPIO framework
+8a0d0ca1c23f22260c18a65bcc0b198ea950eedc 9a41b0c9918be7f404cca38dd9729d92bf4e4ea1 irene <ireneyclin@msi.com> 1496383815 +0800	am: MX: Added definition file for MC13892
+9a41b0c9918be7f404cca38dd9729d92bf4e4ea1 30be2f6bb9b36054f94d4ba8aed5bfb17997e84e irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00180623 fastboot: add fastboot in MX6Q_SABERSD boards
+30be2f6bb9b36054f94d4ba8aed5bfb17997e84e debd3c1ed2d91debca78c26cbced6c869040010c irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00180955 mx6q sabresd snvs TKT104835: fix long press ONOFF failed in u-boot
+debd3c1ed2d91debca78c26cbced6c869040010c fdef6be09c2a551f97a91c15f43df91922f2e530 irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00181337-1 i.mx6 : add initial support for i.mx6sl
+fdef6be09c2a551f97a91c15f43df91922f2e530 b49235075cc9fa6f3ce218820479453799f1c9c4 irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00181337-2 i.mx6 : i.mx6sl arm2 add EPDC support
+b49235075cc9fa6f3ce218820479453799f1c9c4 f753ed300b9e99ddbf4a4b92dba5cf37fb98100c irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00181337-3 i.mx6: i.mx6sl: add initial support for i.mx6sl ARM2 board
+f753ed300b9e99ddbf4a4b92dba5cf37fb98100c 300942b49a981c1e695ccfa4e0b0c8f8e7fddf4c irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00181337-4 i.mx6 : i.mx6sl: Fix FEC RX CRC Error
+300942b49a981c1e695ccfa4e0b0c8f8e7fddf4c cb127275412a84120c0aa76c15dff500165fad48 irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00181621 : MX6Solo SABREAI - Set default boot up to SD Card
+cb127275412a84120c0aa76c15dff500165fad48 2902bac2c9d8d8324800a49b8f3290fa67c9e77d irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00181348 pfuze sabresd: pfuze support in u-boot
+2902bac2c9d8d8324800a49b8f3290fa67c9e77d f7251e4159adb6961715d8313f529fd11228c8cc irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00182017 mx6dl sabresd I2C: fix build error and support mx6dl_sabresd
+f7251e4159adb6961715d8313f529fd11228c8cc ff0a768673ac3cccaf7d73ee9e0cc5edc1a8fea1 irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00182426 MX6DL: add fastboot support for MX6DL.
+ff0a768673ac3cccaf7d73ee9e0cc5edc1a8fea1 e987c7fcd5692655908796e63ff9bc21bcc3e0ae irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00182739 sabresd I2C:add i2c recovery function in board_lateinit
+e987c7fcd5692655908796e63ff9bc21bcc3e0ae 2fd2e4af819a4480a695cda07a88f4db0eb3f5c7 irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00182459 fastboot: change vid pid to align with winXP fastboot driver.
+2fd2e4af819a4480a695cda07a88f4db0eb3f5c7 0e681027975cc6a27b090d5baab44612141e6dbc irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00209059 android: refine fastboot and recovery support.
+0e681027975cc6a27b090d5baab44612141e6dbc 6f51edc78ac73cc9929a460bc923a9114e2769d5 irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00209306 i.mx6:i.mx6sl: fixup the load address for i.mx6sl uImage
+6f51edc78ac73cc9929a460bc923a9114e2769d5 d147a4d53147928cf78a536ab96fec1c0f233335 irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00180103 MX6 sabreauto: Adjust IPU AXI-id0/1 Qos value
+d147a4d53147928cf78a536ab96fec1c0f233335 8f00667c5812524c67149660b7422f100f5cbf20 irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00210014 i.mx6 : i.mx6sl : add PAD_CTL_LVE support for pad configuration
+8f00667c5812524c67149660b7422f100f5cbf20 e71bb7e8add9223143418c453cc152b720ff803b irene <ireneyclin@msi.com> 1496383815 +0800	am: ENGR00209899-1 mx6x: add generic gpio interface.
+e71bb7e8add9223143418c453cc152b720ff803b 7f25e5fbd8037d83164348445786ed9e78432bf5 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00209899-2 MX6Q: cleanup: cleanup fastboot, udc warnning.
+7f25e5fbd8037d83164348445786ed9e78432bf5 6adf7708fb5c2f30971c8a12550f59cd45bd2d77 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00209910 Add support for MX6SL mfgtools firmware support
+6adf7708fb5c2f30971c8a12550f59cd45bd2d77 41a4e61ee99339d6710984a9295d666d4c52d86b irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00210918-1 android: add mx6sl android support
+41a4e61ee99339d6710984a9295d666d4c52d86b 55e1f5d085126429be157502374f44ee80752c24 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00210918-2 cleanup android support, build pass all boards
+55e1f5d085126429be157502374f44ee80752c24 a09b1f512c6cf67a2e14ddb4845e46daae2320ef irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00211038 Fix the PAD_LVE implementation
+a09b1f512c6cf67a2e14ddb4845e46daae2320ef 4e3ea351aca2093b095038b45a4813887955034d irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00211117 - U-Boot: Add EPDC splash screen for MX 6DL/S platforms
+4e3ea351aca2093b095038b45a4813887955034d af801c0a2d29e9184feedc7e832183fa767ac687 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00212287 - U-Boot EPDC splash screen: Disable EPDC splash by default
+af801c0a2d29e9184feedc7e832183fa767ac687 9ce595f85977f9453d9b712781517d430c8ae2e6 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00212571 [MX6]Change DRAM ODT setting to save power
+9ce595f85977f9453d9b712781517d430c8ae2e6 1fff13762b3d344e90b378941ce148d49b4dfb97 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00212229 [MX6SL_ARM2]uboot: 8bit MMC cards failed to boot on SD1.
+1fff13762b3d344e90b378941ce148d49b4dfb97 fb060cb3af1de14566641ad2ddcc09e8744c85a3 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00213689 - U-Boot: EPDC Splash Screen failing for MX 6DL/S
+fb060cb3af1de14566641ad2ddcc09e8744c85a3 3d1c6b6b962dacf677df4b684370b0355d86bd0a irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00214866 MX6SL ARM2, UBoot : Apply V0.91 LPDDR2 Script
+3d1c6b6b962dacf677df4b684370b0355d86bd0a 799273b25c9acc1d352d2238f7d40d109e344c60 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00214947 MX6 UBOOT : default enable wait mode as default parameters
+799273b25c9acc1d352d2238f7d40d109e344c60 d9a83ac93656b028b12c5119feb1618f103727ea irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00215515 MX6: Move IPU QoS and VDOA/IPU/VPU AXI Cache config to kernel
+d9a83ac93656b028b12c5119feb1618f103727ea f41a877a10a3879d1892a35266f555c3365d1c28 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00215633 MX6DL LPDDR2 : enable plugin mode of system boot
+f41a877a10a3879d1892a35266f555c3365d1c28 bd7a583fffb02b0031354fe0004b11d34be0e812 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00215367 MX6 Platforms, remove "nosmp" in default parameters
+bd7a583fffb02b0031354fe0004b11d34be0e812 8f72f70f3bdc539269c604fef7b54d59fd976544 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00215197 pfuze MX6SL_ARM2: enable LDO bypass on u-boot
+8f72f70f3bdc539269c604fef7b54d59fd976544 7ca992f9de4e078a010858e0f8abf91d4d6cf10d irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00216852 MX6SL ARM2, UBoot : Apply V0.93 LPDDR2 Script
+7ca992f9de4e078a010858e0f8abf91d4d6cf10d d9015dc1029bcc085f770b7ffdc3b655e5067920 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00217114-1 MX6 U-Boot, Secure Boot, one code base for MX6Q/DL/SL
+d9015dc1029bcc085f770b7ffdc3b655e5067920 3b92ecff627820d5ed17727f5c40c69bb358b9d4 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00217114-2 MX6 U-Boot, Secure Boot, one code base for MX6Q/DL/SL
+3b92ecff627820d5ed17727f5c40c69bb358b9d4 6cf488a0a13f08b286824b0a7ee1edfa90f81d36 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00217381-01: mx6sl add sd1 and sd2 to support SD3.0
+6cf488a0a13f08b286824b0a7ee1edfa90f81d36 c4012084564604e8e3f8ac7295305a4de8524725 irene <ireneyclin@msi.com> 1496383816 +0800	am: ENGR00217381-02: show sd/mmc clk freq for mmcinfo
+c4012084564604e8e3f8ac7295305a4de8524725 94cab6588ab19354a5d35a9307bb5c16f004cba8 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00217764 MX6 Secure Boot : Fix NAND BOOT Failure due to secure patch
+94cab6588ab19354a5d35a9307bb5c16f004cba8 292a453fbcdcd781c95b296e80f9a1fbe6cc5b6f irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218067 mx6sl LDO_BYPASS: enable LDO BYPASS in mx6sl by default
+292a453fbcdcd781c95b296e80f9a1fbe6cc5b6f 521c3a2e3a300d8b4e3b0c8902d4d0975412c24d irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218282 MX6Q: fix linker error when more configure enabled.
+521c3a2e3a300d8b4e3b0c8902d4d0975412c24d 1a1ba61a2d7c9a70cee2d26cf2a8660bf7358920 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00217401 common: fix build warning
+1a1ba61a2d7c9a70cee2d26cf2a8660bf7358920 9addd616650cdf1223a9ef89aca373343fd9644f irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218465 Android: mx6sl-arm2: fix fastboot crash issue
+9addd616650cdf1223a9ef89aca373343fd9644f 7723f65e700f03271961d7d4a22ba511a58f0f3d irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218805 imx6: print the silicon revision correctly
+7723f65e700f03271961d7d4a22ba511a58f0f3d c641d0fbcd1726f840a03fd0fb2796c61f945441 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218583-1 MX6Q/DL SabreSD:Support LVDS1 splashimage
+c641d0fbcd1726f840a03fd0fb2796c61f945441 d3ada4e0b80b9fdf44d059df44b37823bd9f73e5 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218583-2 MX6Q SabreSD:Enable splashimage by default
+d3ada4e0b80b9fdf44d059df44b37823bd9f73e5 d869253de5ff72a1b64eed9b8339d8039374fc9e irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218583-3 MX6DL SabreSD:Enable splashimage by default
+d869253de5ff72a1b64eed9b8339d8039374fc9e dc66fb0c159ec6dea09f058b971ea5eec2ce8c32 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218583-4 MX6Q SabreSD Android:Add splashimage uboot var
+dc66fb0c159ec6dea09f058b971ea5eec2ce8c32 0221a80ce5c3e143631d221d638c9d7f23c5b33c irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218583-5 MX6DL SabreSD Android:Add splashimage uboot var
+0221a80ce5c3e143631d221d638c9d7f23c5b33c 7574a2d8a7281518a42d46ab366e97cd8e8a025d irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218972 MX6 Secure Boot, Change to dynamic HAB data authentication
+7574a2d8a7281518a42d46ab366e97cd8e8a025d fa5571e1f70e6107247a29cbffd1135d7c8f8e9e irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218915-1 FSL common:Add new boot logo
+fa5571e1f70e6107247a29cbffd1135d7c8f8e9e fabde97c9c53026c537c5801268e5e0eec10ef9b irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00218915-2 MX6 SabreSD:Use new 8bit bmp boot logo
+fabde97c9c53026c537c5801268e5e0eec10ef9b 756f5fa6c78b7db95f5afd8564598ef80d423745 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00219636 MX6 UBOOT : Enlarge command line buffer size
+756f5fa6c78b7db95f5afd8564598ef80d423745 7f94fc04ae12b42e2b04e6648b5d151ca56f2ad8 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00219854-1 Enable fastboot feature on mx6q-arm2 board
+7f94fc04ae12b42e2b04e6648b5d151ca56f2ad8 2db5702f0b9336d9e9de18c84c3058d31b75a32a irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00220076 fix the fastboot usb re-connect issue
+2db5702f0b9336d9e9de18c84c3058d31b75a32a cf04ada647861dbffcf4567cbbfd73114ee8dc75 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00220164 pfuze:rise VDDARM_IN to 1.425V and work around pfuze1.0
+cf04ada647861dbffcf4567cbbfd73114ee8dc75 a7ec3c8d7aa7dc395826eb7a74b83ab22e7f2cd3 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00220161: imx6sl: Add MX6SL EVK Support
+a7ec3c8d7aa7dc395826eb7a74b83ab22e7f2cd3 21bdfcfaa42910672c60f7c927a5b3627355c854 irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00220486 Modify ODT values for Solo AI
+21bdfcfaa42910672c60f7c927a5b3627355c854 d6d38399692c71465414cceb3ef9d539b7e164ae irene <ireneyclin@msi.com> 1496383817 +0800	am: ENGR00217505-1 uboot: MX6Q-ARD: add a NAND boot config
+d6d38399692c71465414cceb3ef9d539b7e164ae ec33da755a382fde89810c4759a366fe032b9626 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00217505-2 uboot: mtd: update nand_get_flash_type()
+ec33da755a382fde89810c4759a366fe032b9626 63bb2ba6fac2fca590235cb558b7b9e588743189 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00217505-3 uboot: gpmi: use the community's nand chip database
+63bb2ba6fac2fca590235cb558b7b9e588743189 ef35a97ddc229265681d83cabbeff599644d52aa irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00217505-4 uboot: gpmi: replace the gpmi_nfc_reset_block()
+ef35a97ddc229265681d83cabbeff599644d52aa 74940dcddfd22b4f465f2d10f748f8884b593337 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00217505-5 uboot: gpmi: update the ecc_strength code
+74940dcddfd22b4f465f2d10f748f8884b593337 ec6681c8489f8a36b22ae58b83358182a74bd352 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00217505-6 uboot: gpmi: set default value for busy_timeout
+ec6681c8489f8a36b22ae58b83358182a74bd352 01bb6bf80137c381cd0e0cbfa966dc334b9d9a2e irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00217505-7 uboot: gpmi: update the mtd->ecc_stats when reading page failed
+01bb6bf80137c381cd0e0cbfa966dc334b9d9a2e dc90302992841e98b7823b994d5039caf70bbe4a irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00217505-8 uboot: MX6Q-ARD: set the default gpmi clock to 20MHz
+dc90302992841e98b7823b994d5039caf70bbe4a 044a0c6aa27f07d21abadd3da2865c9d6dd1acbb irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00180538-1 MFG download burn sd,spi, nand, nor failed.
+044a0c6aa27f07d21abadd3da2865c9d6dd1acbb 677a243e5d8f4153d77f04e6b023916a361ab90a irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00220824: mx6sl_evk: mmc: only SD1 supports 8bit on evk board.
+677a243e5d8f4153d77f04e6b023916a361ab90a 3ce69971f921f404ed0a2b094cd88306a4ed3d4b irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00221150 Support spi-nor on manufacturing tool
+3ce69971f921f404ed0a2b094cd88306a4ed3d4b 7bf173b0636c95e7c46e0e1f128996a88d618b46 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00221135: imx6x: clear PowerDown Enable bit of WDOG1_WMCR
+7bf173b0636c95e7c46e0e1f128996a88d618b46 17154245444b481bf70e235499cc4b4c660911b5 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00221332: U_BOOT: remove "boot" and "enable" from configs' name
+17154245444b481bf70e235499cc4b4c660911b5 621812a6f40d1fb3141e69d87fd1432c4bfd207f irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00221013 MX6 SabreSD:Disable LVDS panel CABC function
+621812a6f40d1fb3141e69d87fd1432c4bfd207f f852d7b5635febb4707512f5e8c86c4496ad546d irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00219316-1: mx6 sabreauto: enable mxc_gpio support
+f852d7b5635febb4707512f5e8c86c4496ad546d 29bf666879a3d6107c6ba724b9b408399c7fd690 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00219316-2: mx6q sabreauto enable lvds backlight by default
+29bf666879a3d6107c6ba724b9b408399c7fd690 18675b124a90461f11a7f6b21563bc6558749e4f irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00222005 mfgtool can't work on mx6sl
+18675b124a90461f11a7f6b21563bc6558749e4f 498ec9fa69b77d002b3714251cb25ec9ab1d8236 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00221503-1 cmd_imxotp: refine the help of this command.
+498ec9fa69b77d002b3714251cb25ec9ab1d8236 061c325106304624bd65909ea649bbbd87850c51 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00221503-2 imx6: add cpu serial number support.
+061c325106304624bd65909ea649bbbd87850c51 d047218d44599b9f47f8ad1ba78dc58c2aec94e9 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00222170: Add mx6sl_evk_android_config for mx6sl evk board
+d047218d44599b9f47f8ad1ba78dc58c2aec94e9 efb911e07a0c111897629795e756b63d2a5ed30e irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00223236-1 [MX6]Change the temperature range to -40C ~ 125C
+efb911e07a0c111897629795e756b63d2a5ed30e f6c9c462f4302d4d5da8e233621659ac1d831279 irene <ireneyclin@msi.com> 1496383818 +0800	am: ENGR00223027 Add support for nand on MFG for IMX6Q
+f6c9c462f4302d4d5da8e233621659ac1d831279 6b6753245a8082e48e0492da0628854e6f71af64 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00223788 mx6sl_evk: change boot args to boot from mmc/sd
+6b6753245a8082e48e0492da0628854e6f71af64 17a87880c7ce7427b47b7c397a2b07b3b990cbe0 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00224272: MFG:i.mx6q/ARM2 enable CONFIG_CMD_IMXOTP to fix the build error
+17a87880c7ce7427b47b7c397a2b07b3b990cbe0 b60feb5bceedff36153ddf687f301ba09c331066 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00224291:i.MX6Q/ARM2-LPDDR2:enable CONFIG_CMD_IMXOTP to fix the build error
+b60feb5bceedff36153ddf687f301ba09c331066 edc6c2eee0f52165abe3018512007af43b862cd8 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00224313:i.MX6 general:enable CONFIG_CMD_IMXOTP to fix the build error
+edc6c2eee0f52165abe3018512007af43b862cd8 b9e32ff61173467747ecd7984ba8469d75b1212c irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00225486 Support for spi-nor boot
+b9e32ff61173467747ecd7984ba8469d75b1212c 052307f82ae628b984a5d6d0df39e2b022ae53e9 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00225691 NAND support on i.MX6Solo ARD
+052307f82ae628b984a5d6d0df39e2b022ae53e9 0109fe3cd150e636825c4f55ef8c8c37d5d82acf irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00226048 Fix weim nor for mfg tool
+0109fe3cd150e636825c4f55ef8c8c37d5d82acf 522dbca7e5c2a337d4856aecd86ea628ffec55fe irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00223794 MX6 SabreSD:Enable LVDS panel pwm backlight
+522dbca7e5c2a337d4856aecd86ea628ffec55fe ee16f5be18e2d3a28700ed796153424079d911e1 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00223797-1 MX6 SabreSD:Align IPU related clocks with kernel
+ee16f5be18e2d3a28700ed796153424079d911e1 4cd8dc3983e305dbc0dd863e217a60f86c680a71 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00223797-2 MX6Q/DL CPU:Do not disable IPU display channel
+4cd8dc3983e305dbc0dd863e217a60f86c680a71 ecca8ef401a1c773b317f81a4503517b24e36497 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00223797-3 IPUv3:Wait for sw reset finish
+ecca8ef401a1c773b317f81a4503517b24e36497 9b6e6bce1252ad63ddc0b760639c1fcc0d655408 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00228238 i.mx6/i.mx6dl: sabresd: add solo-ddr32bit support
+9b6e6bce1252ad63ddc0b760639c1fcc0d655408 aa3757e9648e716471e0b66e2387ec418d0e1d77 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00227413 Change configuration file names on AI
+aa3757e9648e716471e0b66e2387ec418d0e1d77 b140137de9e6748ad5056f907eb95158d729b839 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00229456 Support for 64bit DDR configuration for ARD
+b140137de9e6748ad5056f907eb95158d729b839 0c35af29644af6979de0df4a3dfd75bd0e814fe2 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00229614 mx6: disable VDDPU by default, xpu will enable it if needed.
+0c35af29644af6979de0df4a3dfd75bd0e814fe2 c64efe97e5777c782a164daf7f428f41697bd5f9 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00229817: i.mx6dl/mx6solo_sabresd_config: fix the build issue
+c64efe97e5777c782a164daf7f428f41697bd5f9 f81cef8adab55a06a1063b1fdfd18e192fe9888c irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00229709 Support 2 processors at Linux boot
+f81cef8adab55a06a1063b1fdfd18e192fe9888c 5113b6406ce249c4fe971ee9a952182073c43bd2 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00229711 Add weim-nor argument on uboot config Quad/DL
+5113b6406ce249c4fe971ee9a952182073c43bd2 3769793eebfcd5b92057b84cdf93a10f4090557c irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00229789 AHCI Disable SATA PHY in initialization
+3769793eebfcd5b92057b84cdf93a10f4090557c 605aab10e1c97b69b729f05c1eb1681b4de36015 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00229931 Support for Solo configuration on ARD platform
+605aab10e1c97b69b729f05c1eb1681b4de36015 710742e7bd19fbba54ab9fc4f9cb51cf396263f0 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00230334: Fix the mx53_smd_android config
+710742e7bd19fbba54ab9fc4f9cb51cf396263f0 c500420a4e895a9bfb317b2a4937fecb186fcab8 irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00230104 mx6q_sabreauto_nand: fix fec phy address
+c500420a4e895a9bfb317b2a4937fecb186fcab8 01b6e43ccf5fac7422ae6a2a63448f0de8610d8e irene <ireneyclin@msi.com> 1496383819 +0800	am: ENGR00230391: Fix build fail issue of sata
+01b6e43ccf5fac7422ae6a2a63448f0de8610d8e 5e011ec513e800651c02b5a1584977baafafa424 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00231155 add enable_wait_mode=off for all the mx6q/dl mfg uboot
+5e011ec513e800651c02b5a1584977baafafa424 0ace033f0d8e5e915d559ff6dec0281970a8d29a irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00230981-1 pfuze:set all switches to PFM mode in standby
+0ace033f0d8e5e915d559ff6dec0281970a8d29a c97b74e19b7136d581ce0fea584916fa72f08cb5 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00231553: MX6SL: Uncovered an issue for I2C parent clock
+c97b74e19b7136d581ce0fea584916fa72f08cb5 e7102779e68f82225b8d1340b4f61f918b3b82b3 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00230967 Enable recovery mode by keys when boot
+e7102779e68f82225b8d1340b4f61f918b3b82b3 3662d08c28ab9e0b45490712862a0ec803da844f irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00231581 BCH: fix the wrong data size macros in BCH
+3662d08c28ab9e0b45490712862a0ec803da844f 56ab595d173da715136d1f44cca3425eaa51c377 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00231781 fsl common:Align reversed color logo to standard
+56ab595d173da715136d1f44cca3425eaa51c377 6e8a5577b57fabf014e2f463f9e55ab205b7995b irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00231891-1 gpmi: replace the hardcode
+6e8a5577b57fabf014e2f463f9e55ab205b7995b 9ad995de927ce57fb6ad48ab87cbb59dbd37a7c6 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00231891-2 gpmi: fix the 4k page size limit
+9ad995de927ce57fb6ad48ab87cbb59dbd37a7c6 1faadd19cfc3c7e4594f7c6c371b11ef23757def irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR002232258 MX6Q-ARM2: add a NAND boot config for uboot
+1faadd19cfc3c7e4594f7c6c371b11ef23757def aa846fc41446a3e3914db61470182cab1e63f733 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00230364 - imx6sl: FEC: fix cycle reboot fail in EVK platform for bootp.
+aa846fc41446a3e3914db61470182cab1e63f733 57e564dd278b94c80defcaae8f0d171ee0b67c49 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00232682 mx6sl snvs: fix long press ONOFF failed issue in u-boot
+57e564dd278b94c80defcaae8f0d171ee0b67c49 750e28b3f29d9218104596370f654b0e8cf41aba irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233307 Need secure/encrypted boot for Widevine support.
+750e28b3f29d9218104596370f654b0e8cf41aba de9b595c91fa0463fc53f11fbfa37ff11e31eab8 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233730 PFUZE mx6q_sabresd: remove extra increase for PFUZE tolerance
+de9b595c91fa0463fc53f11fbfa37ff11e31eab8 ec1857b78f4caa5d3d93a44d0bfa9c669dc87097 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233716-1: mx6q_sabreauto aling spi-nor environment offsset
+ec1857b78f4caa5d3d93a44d0bfa9c669dc87097 4ffcae8fc3c7035fa8158e376366a0f0770d59f5 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233716-2: mx6q_sabreauto flash u-boot into spi-nor fails to boot
+4ffcae8fc3c7035fa8158e376366a0f0770d59f5 8b2032f101f3536d81b00e2a55e0c2c76be01043 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233881 Camera mx6q_sabresd:swap VGEN5&VGEN3 to fix camera streaks issue
+8b2032f101f3536d81b00e2a55e0c2c76be01043 1cb39328156cefe346670aa7b04b9e53aac262d0 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233709-1 i.mx6dl/sabreauto: update the DDR script for i.mx6dl AI board:
+1cb39328156cefe346670aa7b04b9e53aac262d0 eaa5f816cfe736a88d7eb1d34026db1e8e1b612d irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233709-2 i.mx6q/sabreauto: update the DDR script for i.mx6q AI board:
+eaa5f816cfe736a88d7eb1d34026db1e8e1b612d 5e5e6688e5727199e59c81c79be931af635edbae irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233933 i.mx6dl/sabresd: update the DDR script for i.MX6DL sabresd board
+5e5e6688e5727199e59c81c79be931af635edbae 714b8b83373f46e6fe3efbd7f28a911b9e70cbc9 irene <ireneyclin@msi.com> 1496383820 +0800	am: ENGR00233366-5 Anatop PFUZE: move LDO bypass code to kernel
+714b8b83373f46e6fe3efbd7f28a911b9e70cbc9 ce00e289fc0913ec92149eef7b56eec47f81c679 irene <ireneyclin@msi.com> 1496383821 +0800	am: ENGR00234353-1: mx6_sabreauto fix weim-nor boot
+ce00e289fc0913ec92149eef7b56eec47f81c679 e638f1ff4cc6f5dc1c152081ea13d5daa2c59671 irene <ireneyclin@msi.com> 1496383821 +0800	am: ENGR00234353-2: mx6q_sabreauto_weimnor fix redundant env offset
+e638f1ff4cc6f5dc1c152081ea13d5daa2c59671 d10ba8f9f447adb58d8ef701ca8ea46cc2b37ec1 irene <ireneyclin@msi.com> 1496383821 +0800	am: ENGR00234353-3: mx6q_sabreauto remove EIM_A24 nor pads
+d10ba8f9f447adb58d8ef701ca8ea46cc2b37ec1 91d5c618d75fa28beb3c16e5150827e7a158591c irene <ireneyclin@msi.com> 1496383821 +0800	am: ENGR00233928 i.mx6q/sabresd: update the DDR script for i.MX6Q sabresd board
+91d5c618d75fa28beb3c16e5150827e7a158591c 276afa251bf1c67ec7aadfac1250e197e1166276 irene <ireneyclin@msi.com> 1496383821 +0800	am: ENGR00233168 - U-Boot fails to boot from eMMC
+276afa251bf1c67ec7aadfac1250e197e1166276 71bbd94373db6bd476b60af8064ffe80d05ea7ac irene <ireneyclin@msi.com> 1496383821 +0800	am: ENGR00223037 fsl: Add new board HDMI dongle for imx6 Q/DL.
+71bbd94373db6bd476b60af8064ffe80d05ea7ac b495bac44904b3581d95be2cc8cf816767caedcd irene <ireneyclin@msi.com> 1496383821 +0800	am: ENGR00235564: i.mx6 u-boot: change plugin to use ROM API table for code jump
+b495bac44904b3581d95be2cc8cf816767caedcd a00403ea2adf62cf730a7037191636978d616959 irene <ireneyclin@msi.com> 1496383822 +0800	am: ENGR000234991 MX6DL/ARD: Two boards met kernel dump during boot up
+a00403ea2adf62cf730a7037191636978d616959 609b28b0c7648ed357f1771c149aa5bb6f03bd8f irene <ireneyclin@msi.com> 1496383823 +0800	am: ENGR00236337: mx6/clock: emi_slow clock rate is not printed out correctly
+609b28b0c7648ed357f1771c149aa5bb6f03bd8f b4a1336c70dd761d3e2ec3644211352bb82bb2d0 irene <ireneyclin@msi.com> 1496383824 +0800	am: ENGR00235817 mx6: use SNVS LPGPR register to store boot mode value.
+b4a1336c70dd761d3e2ec3644211352bb82bb2d0 8186d64861686424a31d11d80aa1dc84790ad528 irene <ireneyclin@msi.com> 1496383824 +0800	am: ENGR00236620: Add Android fastboot and recovery reboot support
+8186d64861686424a31d11d80aa1dc84790ad528 daf6a6760f445a2435ab9429982c045004da286e irene <ireneyclin@msi.com> 1496383824 +0800	am: ENGR00235821 mx6: correct work flow of PFDs
+daf6a6760f445a2435ab9429982c045004da286e f246891f3c66d4b8f2edad391999b2688e82b54a irene <ireneyclin@msi.com> 1496383825 +0800	am: ENGR00236902: mx6solo_sabresd: update the DDR script for solo-sabresd
+f246891f3c66d4b8f2edad391999b2688e82b54a 00ee43cb6ec71fbdbb5c5abff2bfd953eeb13b02 irene <ireneyclin@msi.com> 1496383825 +0800	am: ENGR00236472 Update DDR script of ARD solo emulation
+00ee43cb6ec71fbdbb5c5abff2bfd953eeb13b02 4791b0dad4fabedf2ef0ee083e617cf5bace583b irene <ireneyclin@msi.com> 1496383826 +0800	am: ENGR00235540 add sabreauto_6q config for android
+4791b0dad4fabedf2ef0ee083e617cf5bace583b ceeaf77079f1221e3ec7afd2327289a877ec4718 irene <ireneyclin@msi.com> 1496383826 +0800	am: ENGR00238048: Add support for processor serial ATAG in uboot for iMX53
+ceeaf77079f1221e3ec7afd2327289a877ec4718 47ca01a2c816d96626b8d4f8a4af4c19858b10a8 irene <ireneyclin@msi.com> 1496383826 +0800	am: ENGR00238300: enhance the download speed for fastboot
+47ca01a2c816d96626b8d4f8a4af4c19858b10a8 f9dfe5a7a541d2198824f0d0a7747293c0618434 irene <ireneyclin@msi.com> 1496383826 +0800	am: ENGR00238371: mx6solo: sabresd: make system prompt indicate solo config
+f9dfe5a7a541d2198824f0d0a7747293c0618434 172821fa9bdfc944eb362a72d3113deb2b2d9f41 irene <ireneyclin@msi.com> 1496383826 +0800	am: ENGR00238834: mx6solo: add MFG support for mx6solo sabresd board
+172821fa9bdfc944eb362a72d3113deb2b2d9f41 579d98ed8057e2f82ba1c291ffca138343bb5aec irene <ireneyclin@msi.com> 1496383826 +0800	am: ENGR00238363: mx6dl: epdc: remove epdc macro redefinition in config file
+579d98ed8057e2f82ba1c291ffca138343bb5aec 3ff5c0dd056e876da423b3ec6bce65abcdaf0228 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00230437: mx6: epdc: EPDC I/O setup after V3p3 is enable
+3ff5c0dd056e876da423b3ec6bce65abcdaf0228 20e820f95969a4ed9976744cf8fafe9f6072a78d irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00239366: Add support for nand storage in quick fastboot
+20e820f95969a4ed9976744cf8fafe9f6072a78d 2c123ba4cfa48532996b04cdcc36e473ad795163 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00239607 add nand config for android sabreauto
+2c123ba4cfa48532996b04cdcc36e473ad795163 ad621b8d6d86ec991eacd1d3639b46e45d6d80b5 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00239610: Enhance the quick fastboot stability
+ad621b8d6d86ec991eacd1d3639b46e45d6d80b5 8d69b1928c97abe658eb616125231545d3b95968 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00240261 support fastboot for nand boot in sabreauto_android
+8d69b1928c97abe658eb616125231545d3b95968 13b68fbbfc8b73dfae5c23c55fabdd9627e02c8c irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00241595-1 mx6q-sabresd:Enable SATA PHY PDDQ default
+13b68fbbfc8b73dfae5c23c55fabdd9627e02c8c e94c06028349122b4c06a0d640d60f0d974f5469 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00241595-2 mx6q-arm2:Enable SATA PHY PDDQ default
+e94c06028349122b4c06a0d640d60f0d974f5469 dfdb2e41dc99afdd90ca34e12e273de557cd033d irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00241595-3 mx6q-sabreauto:Enable SATA PHY PDDQ default
+dfdb2e41dc99afdd90ca34e12e273de557cd033d 35e14174c48a01531f4252621987afea37728f38 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00241595-4 mx6q-hdmidongle:Enable SATA PHY PDDQ default
+35e14174c48a01531f4252621987afea37728f38 18514adcc694eb0d4b98a87b0e83586e643c0e9f irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00242042 MX6DQ/DL: fix boot fail issue on mx6dl boards
+18514adcc694eb0d4b98a87b0e83586e643c0e9f ef5dc2fa5c82ba37ef6d9f2e9577c07de3fa3983 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00243038: make get_mmc_env_devno to be a generic function
+ef5dc2fa5c82ba37ef6d9f2e9577c07de3fa3983 b7296d8959277190781efbe2e24b15fb5540b23d irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00244769-3 [NOR FLASH]-Improve WEIM NOR speed
+b7296d8959277190781efbe2e24b15fb5540b23d 51b3b62811edbd840fa8364ecb2b939e53f103fa irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00254091 fastboot: add reboot command for quick fastboot
+51b3b62811edbd840fa8364ecb2b939e53f103fa 520080743235973853eb7f2242596e6bfbbbdef9 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00255481 mx6: Update equation for thermal sensor
+520080743235973853eb7f2242596e6bfbbbdef9 519c977ed83a6ec8ec018b8a9306ef64fb229bca irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00256543 mx6: Update equation for thermal sensor on i.MX6DL
+519c977ed83a6ec8ec018b8a9306ef64fb229bca edaf030f49004ac5f4b4b14257ab5aa0cd83ae50 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00254470-1 mx6q-sd:sata device can't work properly on most boards
+edaf030f49004ac5f4b4b14257ab5aa0cd83ae50 d4e8160facf8d0ed4c0849ef2aef7929fdea7f20 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00254470-2 mx6q-arm2:sata device can't work properly on most boards
+d4e8160facf8d0ed4c0849ef2aef7929fdea7f20 f92a5e862831288e6e23e80cc5c737fa98a6d5a0 irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00254470-3 mx6q-sabreauto:sata device can't work properly on most boards
+f92a5e862831288e6e23e80cc5c737fa98a6d5a0 0902616fe990ce1fa83f7d5983d6dccc360b638e irene <ireneyclin@msi.com> 1496383827 +0800	am: ENGR00254470-4 mx6q-hdmidongle:sata device can't work properly on most boards
+0902616fe990ce1fa83f7d5983d6dccc360b638e 6610782622befc30c652c99b0ee25925cd83aafe irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00255977 mx6sl: correct the information for chip and board revision
+6610782622befc30c652c99b0ee25925cd83aafe 119addb8d6028a6d087ea1a661ac101b07085e00 irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00258651 mx6: update thermal equation for i.MX6sl
+119addb8d6028a6d087ea1a661ac101b07085e00 d53c2833c9ceca4561c97f39b88533ead02df71d irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00260356: i.MX6SL: uboot: reset can NOT work on TO1.2
+d53c2833c9ceca4561c97f39b88533ead02df71d 77c2ee9395dec7b1e82dccc5eac3824ff58e39d1 irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00231572 mx6solo: Add Android solo uboot configure
+77c2ee9395dec7b1e82dccc5eac3824ff58e39d1 0657f33946bb8e5cbce6c1111b7bfe9c0a095d17 irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00265720 Enlarge command line buffer size
+0657f33946bb8e5cbce6c1111b7bfe9c0a095d17 4344b31cc53b06d0f40e59a9d850d4347d634af1 irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00266247 Do not limit HAB code for closed systems only
+4344b31cc53b06d0f40e59a9d850d4347d634af1 4b8ac5b68166d955b16db7a6fc25907efbc1b398 irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00267118-1 IPU disp:Align setting with kernel
+4b8ac5b68166d955b16db7a6fc25907efbc1b398 dc67f7bdd7847dbc71a16397b72a92fd6032a2b9 irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00267118-2 IPU disp:Align setting with kernel
+dc67f7bdd7847dbc71a16397b72a92fd6032a2b9 f22a292e8781cceeaffad18fea54209f7bbaadfb irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00266869-1 imx6x sarebsd: Fix recovery fail issue on SD
+f22a292e8781cceeaffad18fea54209f7bbaadfb 9c6f6da092fd53a2b364079ae8285e7288bb2e76 irene <ireneyclin@msi.com> 1496383828 +0800	am: ENGR00266869-2 imx6x sabresd: correct the bootargs for android
+9c6f6da092fd53a2b364079ae8285e7288bb2e76 3504d7eeb15e7b7bda30d7eadc7add99636117a7 irene <ireneyclin@msi.com> 1496383829 +0800	am: ENGR00268063 imx6x android: Fix build error
+3504d7eeb15e7b7bda30d7eadc7add99636117a7 fc42e0996c6d830bf2ed9ddeb39e9749b756eba0 irene <ireneyclin@msi.com> 1496383829 +0800	am: ENGR00255779 mx6dl/sabreauto: change the u-boot prompt from SOLO to DL
+fc42e0996c6d830bf2ed9ddeb39e9749b756eba0 466ab1d04ef4aaf9912cc5e0434c953f12d63dfb irene <ireneyclin@msi.com> 1496383829 +0800	am: ENGR00272558 fastboot_dev and bootcmd cannot be configured for i.MX6 SabreSD
