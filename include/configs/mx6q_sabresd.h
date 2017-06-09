@@ -110,6 +110,25 @@
 
 #define CONFIG_PRIME	"FEC0"
 
+#if 1
+#define CONFIG_LOADADDR		0x12000000	/* loadaddr env var */
+#define	CONFIG_EXTRA_ENV_SETTINGS \
+		"fdt_addr=0x18000000\0" \
+		"loadaddr=0x12000000\0" \
+		"kernel_image=uImage\0" \
+		"fdt_file=imx6q-sabresd.dtb\0" \
+		"loadimage=fatload mmc 2:1 ${loadaddr} ${kernel_image}\0" \
+		"loadfdt=fatload mmc 2:1 ${fdt_addr} ${fdt_file}\0" \
+		"bootargs_mmc=setenv bootargs console=ttymxc0,115200 " \
+			"root=/dev/mmcblk2p2 rootwait rw\0" \
+		"bootcmd_mmc=run bootargs_mmc; " \
+			"mmc dev 2; " \
+			"run loadimage; " \
+			"run bootargs_mmc; " \
+			"run loadfdt ;" \
+			"bootm ${loadaddr} - ${fdt_addr};\0" \
+		"bootcmd=run bootcmd_mmc\0"
+#else
 #define CONFIG_LOADADDR		0x10800000	/* loadaddr env var */
 #define CONFIG_RD_LOADADDR	(0x1300000)
 
@@ -131,6 +150,7 @@
 		"mmc read ${loadaddr} 0x800 0x2000; bootm\0"	\
 		"bootcmd=run bootcmd_net\0"                             \
 
+#endif
 
 #define CONFIG_ARP_TIMEOUT	200UL
 
