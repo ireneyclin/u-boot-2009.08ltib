@@ -39,14 +39,104 @@
 #include <fdt_support.h>
 #include <asm/io.h>
 
+static int clk_limit;
+static int bus_limit;
+
+#ifdef CONFIG_MMC_DMA
+
+#ifdef CONFIG_ARCH_MMU
+
+extern void dma_inv_range(const void *, const void *);
+extern void dma_flush_range(const void *, const void *);
+
+#define DMA_INV_SIZE(addr,size) v7_dma_inv_range(addr, ((char*)addr)+size)
+#define DMA_FLUSH_SIZE(addr,size) v7_dma_clean_range(addr, ((char*)addr)+size)
+#define DMA_FLUSH_RANGE(start,end) v7_dma_clean_range(start, end);
+
+#else
+
+#define DMA_INV_SIZE(addr,size)
+#define DMA_FLUSH_SIZE(addr,size)
+#define DMA_FLUSH_RANGE(start,end)
+
+#endif
+
+#define SDHCI_DSADDR1	0x00
+#define SDHCI_ADSADDR1	0x58
+#define SDHCI_PROCTL	0x28
+#define   SDHCI_PROCTL_SDMA  (0x0<<8)
+#define   SDHCI_PROCTL_ADMA1 (0x1<<8)
+#define   SDHCI_PROCTL_ADMA2 (0x2<<8)
+
+#define ADMA2_BLOCKSIZE_MAX 32768
+
+typedef struct {
+  u32 length_attributes;
+  u32* address;
+} adma2_descriptor_t;
+
+#define ADMA2_ATTRIBUTE_OP_LINK 0x30
+#define ADMA2_ATTRIBUTE_OP_TRAN 0x20
+#define ADMA2_ATTRIBUTE_OP_RSV  0x10
+#define ADMA2_ATTRIBUTE_OP_NOP  0x00
+#define ADMA2_ATTRIBUTE_INT     0x04
+#define ADMA2_ATTRIBUTE_END     0x02
+#define ADMA2_ATTRIBUTE_VALID   0x01
+
+#define ADMA2_ATTRIBUTE_DEFAULT_XFER_CONT 0x21
+#define ADMA2_ATTRIBUTE_DEFAULT_XFER_DONE 0x27
+
+#define ADMA2_NUM_BD 1024
+static adma2_descriptor_t adma2_descriptor[ADMA2_NUM_BD];
+
+
+void dma_setup(int adma2_address, int adma2_remaining) {
+  adma2_descriptor_t* adma2_current_bd;
+  int xfersize;
+
+  adma2_current_bd = &adma2_descriptor[0];
+
+  do {
+
+    if(adma2_remaining<=ADMA2_BLOCKSIZE_MAX) {
+      adma2_current_bd->length_attributes = (adma2_remaining<<16)|ADMA2_ATTRIBUTE_DEFAULT_XFER_DONE;
+      xfersize = adma2_remaining;
+    }
+    else {
+      adma2_current_bd->length_attributes = (ADMA2_BLOCKSIZE_MAX<<16)|ADMA2_ATTRIBUTE_DEFAULT_XFER_CONT;
+      xfersize = ADMA2_BLOCKSIZE_MAX;
+    };
+    
+    adma2_current_bd->address = (unsigned int*)adma2_address;
+
+    DMA_FLUSH_SIZE(adma2_current_bd,sizeof(adma2_descriptor_t));
+    
+    adma2_address   += xfersize;
+    adma2_remaining -= xfersize;
+    
+    adma2_current_bd++;
+    
+  } while(adma2_remaining>0);
+
+};
+
+#endif
 
 DECLARE_GLOBAL_DATA_PTR;
+
+#ifdef CONFIG_MMC_DMA
+
+#define SDHCI_IRQ_EN_BITS		(IRQSTATEN_CC | IRQSTATEN_TC | \
+				IRQSTATEN_BWR | IRQSTATEN_BRR | IRQSTATEN_CINT | IRQSTATEN_DINT | \
+				IRQSTATEN_CTOE | IRQSTATEN_CCE | IRQSTATEN_CEBE | \
+				IRQSTATEN_CIE | IRQSTATEN_DTOE | IRQSTATEN_DCE | IRQSTATEN_DEBE)
+#else
 
 #define SDHCI_IRQ_EN_BITS		(IRQSTATEN_CC | IRQSTATEN_TC | \
 				IRQSTATEN_BWR | IRQSTATEN_BRR | IRQSTATEN_CINT | \
 				IRQSTATEN_CTOE | IRQSTATEN_CCE | IRQSTATEN_CEBE | \
 				IRQSTATEN_CIE | IRQSTATEN_DTOE | IRQSTATEN_DCE | IRQSTATEN_DEBE)
-
+#endif
 struct fsl_esdhc {
 	uint	dsaddr;
 	uint	blkattr;
@@ -69,7 +159,13 @@ struct fsl_esdhc {
 	uint	mixctrl;
 	char	reserved1[4];
 	uint	fevt;
+#ifdef CONFIG_MMC_DMA
+	uint	admaes1;
+	uint	adsaddr1;
+	char	reserved2[4];
+#else
 	char	reserved2[12];
+#endif
 	uint dllctrl;
 	uint dllstatus;
 	uint clktunectrlstatus;
@@ -87,6 +183,10 @@ uint esdhc_xfertyp(struct mmc_cmd *cmd, struct mmc_data *data)
 
 	if (data) {
 		xfertyp |= XFERTYP_DPSEL;
+
+#ifdef CONFIG_MMC_DMA
+		xfertyp |= XFERTYP_DMAEN;
+#endif
 
 		if (data->blocks > 1) {
 			xfertyp |= XFERTYP_MSBSEL;
@@ -124,8 +224,13 @@ static int esdhc_setup_data(struct mmc *mmc, struct mmc_data *data)
 
 	wml_value = data->blocksize / 4;
 
+#ifdef CONFIG_MMC_DMA
+	if (wml_value > 0x40)
+		wml_value = 0x40;
+#else
 	if (wml_value > 0x80)
 		wml_value = 0x80;
+#endif
 
 	if (!(data->flags & MMC_DATA_READ)) {
 		if ((readl(&regs->prsstat) & PRSSTAT_WPSPL) == 0) {
@@ -155,6 +260,16 @@ static int esdhc_setup_data(struct mmc *mmc, struct mmc_data *data)
 	tmp = (readl(&regs->sysctl) & (~SYSCTL_TIMEOUT_MASK)) | (timeout << 16);
 	writel(tmp, &regs->sysctl);
 
+#ifdef CONFIG_MMC_DMA
+	if (data->flags & MMC_DATA_READ) {
+	  DMA_INV_SIZE(data->dest, data->blocksize * data->blocks);
+	  dma_setup((int)data->dest, data->blocks * data->blocksize);
+	} else {
+	  DMA_FLUSH_SIZE(data->src, data->blocksize * data->blocks);
+	  dma_setup((int)data->src, data->blocks * data->blocksize);
+	};
+	writel((u32)&adma2_descriptor[0], &regs->adsaddr1);
+#endif
 	return 0;
 }
 
@@ -229,7 +344,11 @@ esdhc_send_cmd(struct mmc *mmc, struct mmc_cmd *cmd, struct mmc_data *data)
 		;
 
 	irqstat = readl(&regs->irqstat);
+#ifdef CONFIG_MMC_DMA
+	writel(IRQSTAT_CC, &regs->irqstat);
+#else
 	writel(irqstat, &regs->irqstat);
+#endif
 
 	/* Reset CMD and DATA portions on error */
 	if (irqstat & (CMD_ERR | IRQSTAT_CTOE)) {
@@ -323,7 +442,14 @@ esdhc_send_cmd(struct mmc *mmc, struct mmc_cmd *cmd, struct mmc_data *data)
 
 		tmp = readl(&regs->irqstaten) | SDHCI_IRQ_EN_BITS;
 		writel(tmp, &regs->irqstaten);
-
+#ifdef CONFIG_MMC_DMA
+		if (data->flags & MMC_DATA_READ) {
+		  while (!(readl(&regs->irqstat) & IRQSTAT_DINT));
+		}
+		else {
+		  while (!(readl(&regs->irqstat) & IRQSTAT_TC));
+		};
+#else
 		if (data->flags & MMC_DATA_READ) {
 			tmp_ptr = (u32 *)data->dest;
 
@@ -355,6 +481,7 @@ esdhc_send_cmd(struct mmc *mmc, struct mmc_cmd *cmd, struct mmc_data *data)
 		}
 
 		while (!(readl(&regs->irqstat) & IRQSTAT_TC)) ;
+#endif
 	}
 
 	/* Reset CMD and DATA portions of the controller on error */
@@ -379,6 +506,8 @@ void set_sysctl(struct mmc *mmc, uint clock)
 	volatile struct fsl_esdhc *regs = (struct fsl_esdhc *)cfg->esdhc_base;
 	uint clk;
 	u32 tmp;
+	if(clk_limit)
+	if(clock>clk_limit) clock=clk_limit;
 
 	if (sdhc_clk / 16 > clock) {
 		for (pre_div = 2; pre_div < 256; pre_div *= 2)
@@ -415,7 +544,7 @@ void set_sysctl(struct mmc *mmc, uint clock)
 	tmp = (readl(&regs->sysctl) & (~SYSCTL_CLOCK_MASK)) | clk;
 	writel(tmp, &regs->sysctl);
 
-	udelay(10000);
+	udelay(3000);
 
 #ifdef CONFIG_IMX_ESDHC_V1
 	tmp = readl(&regs->sysctl) | SYSCTL_PEREN;
@@ -512,8 +641,11 @@ static void esdhc_set_ios(struct mmc *mmc)
 	struct fsl_esdhc *regs = (struct fsl_esdhc *)cfg->esdhc_base;
 	u32 tmp;
 
-	/* Set the clock speed */
-	set_sysctl(mmc, mmc->clock);
+	if(mmc->clock!=mmc->oldclock) {
+		mmc->oldclock=mmc->clock;
+		/* Set the clock speed */
+		set_sysctl(mmc, mmc->clock);
+	};
 
 	/* Set the bus width */
 	tmp = readl(&regs->proctl) & (~(PROCTL_DTW_4 | PROCTL_DTW_8));
@@ -556,6 +688,19 @@ static int esdhc_init(struct mmc *mmc)
 	struct fsl_esdhc *regs = (struct fsl_esdhc *)cfg->esdhc_base;
 	u32 tmp;
 
+	tmp = getenv ("mmc_clk_limit");
+	if(tmp) clk_limit = simple_strtoul(tmp,0,10);
+
+	tmp = getenv ("mmc_bus_limit");
+	if(tmp) {
+	  bus_limit = simple_strtoul(tmp,0,10);
+	  if((bus_limit==1)||(bus_limit==4)||(bus_limit==8)) {
+	    mmc->host_caps &= ~(MMC_MODE_8BIT|MMC_MODE_4BIT);
+	    if(bus_limit>=4) mmc->host_caps |= MMC_MODE_4BIT;
+	    if(bus_limit==8) mmc->host_caps |= MMC_MODE_8BIT;
+	  };
+	};
+
 	/* Reset the eSDHC by writing 1 to RSTA bit of SYSCTRL Register */
 	tmp = readl(&regs->sysctl) | SYSCTL_RSTA;
 	writel(tmp, &regs->sysctl);
@@ -578,7 +723,7 @@ static int esdhc_init(struct mmc *mmc)
 #endif
 
 	/* Set the initial clock speed */
-	set_sysctl(mmc, 400000);
+	//set_sysctl(mmc, 400000);
 
 	/* Put the PROCTL reg back to the default */
 	writel(PROCTL_INIT, &regs->proctl);
