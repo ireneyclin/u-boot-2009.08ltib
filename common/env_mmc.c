@@ -138,6 +138,13 @@ inline int read_env(struct mmc *mmc, unsigned long size,
 void env_relocate_spec(void)
 {
 #if !defined(ENV_IS_EMBEDDED)
+#if defined(CONFIG_MMC_BUILTIN_ENV)
+    extern env_t builtin_environemnt_begin;
+    if(builtin_environemnt_begin.data[0]==0xff)
+        use_default();
+    else
+        memcpy(env_ptr,&builtin_environemnt_begin,CONFIG_ENV_SIZE);
+#else
 	struct mmc *mmc = find_mmc_device(mmc_env_devno);
 
 	if (init_mmc_for_env(mmc))
@@ -150,6 +157,7 @@ void env_relocate_spec(void)
 		return use_default();
 
 	gd->env_valid = 1;
+#endif
 #endif
 }
 

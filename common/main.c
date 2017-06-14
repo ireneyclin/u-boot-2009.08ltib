@@ -218,8 +218,24 @@ static __inline__ int abortboot(int bootdelay)
 #ifdef CONFIG_MENUPROMPT
 	printf(CONFIG_MENUPROMPT);
 #else
+#if 0
+#if defined(CONFIG_CONSOLE_QUIET)
+    if (bootdelay > 0) {
+        extern int console_quiet;
+        if(console_quiet == 1) {
+            extern void dmesg_dump(void);
+        };
+    };
+#endif /* if defined(CONFIG_CONSOLE_QUIET) */
+    if (bootdelay > 0)
 	printf("Hit any key to stop autoboot: %2d ", bootdelay);
-#endif
+#endif /* if 0 */
+
+    bootdelay = 0;
+
+#if defined(CONFIG_CONSOLE_QUIET)
+#endif /* if defined(CONFIG_CONSOLE_QUIET) */
+#endif /* ifdef CONFIG_MENUPROMPT */
 
 #if defined CONFIG_ZERO_BOOTDELAY_CHECK
 	/*
@@ -452,6 +468,15 @@ void main_loop (void)
 			 */
 			reset_cmd_timeout();
 		}
+#endif
+#if defined(CONFIG_CONSOLE_QUIET)
+    do {
+        extern int console_quiet;
+        if(console_quiet == 1) {
+            extern void dmesg_dump(void);
+            dmesg_dump();
+        };
+    } while(0);
 #endif
 		len = readline (CONFIG_SYS_PROMPT);
 
