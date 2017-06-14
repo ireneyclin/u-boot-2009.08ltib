@@ -72,6 +72,9 @@
 #define CONFIG_BAUDRATE			115200
 #define CONFIG_SYS_BAUDRATE_TABLE	{9600, 19200, 38400, 57600, 115200}
 
+//#define CONFIG_MEM_MALLOC_INIT_FAST
+//#define CONFIG_MMC_BUILTIN_ENV
+
 /***********************************************************
  * Command definition
  ***********************************************************/
