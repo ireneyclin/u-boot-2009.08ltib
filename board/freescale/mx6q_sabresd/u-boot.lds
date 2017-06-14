@@ -83,4 +83,9 @@ SECTIONS
 	__bss_start = .;
 	.bss : { *(.bss) }
 	_end = .;
+
+    . = ALIGN(0x4000);
+    __mmutable_start = .;
+    .mmutable (NOLOAD) : { *(.mmutable) }
+    __mmutable_end = .;
 }

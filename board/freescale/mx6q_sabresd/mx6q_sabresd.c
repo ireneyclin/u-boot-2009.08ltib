@@ -182,9 +182,12 @@ u32 get_board_rev(void)
 }
 
 #ifdef CONFIG_ARCH_MMU
+static char mmu_table[0x4000] __attribute__ ((section (".mmutable")));
+
 void board_mmu_init(void)
 {
-	unsigned long ttb_base = PHYS_SDRAM_1 + 0x4000;
+	//unsigned long ttb_base = PHYS_SDRAM_1 + 0x4000;
+    unsigned long ttb_base = ((unsigned long)&mmu_table);
 	unsigned long i;
 
 	/*
@@ -201,10 +204,12 @@ void board_mmu_init(void)
 	/*
 	* First clear all TT entries - ie Set them to Faulting
 	*/
-	memset((void *)ttb_base, 0, ARM_FIRST_LEVEL_PAGE_TABLE_SIZE);
+	//memset((void *)ttb_base, 0, ARM_FIRST_LEVEL_PAGE_TABLE_SIZE);
 	/* Actual   Virtual  Size   Attributes          Function */
 	/* Base     Base     MB     cached? buffered?  access permissions */
 	/* xxx00000 xxx00000 */
+    X_ARM_MMU_SECTION(0x000, 0x000, 0x700, 0,0,0); /* faulting by default */
+    X_ARM_MMU_SECTION(0xf00, 0xf00, 0x100, 0,0,0); /* faulting by default */
 	X_ARM_MMU_SECTION(0x000, 0x000, 0x001,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* ROM, 1M */
