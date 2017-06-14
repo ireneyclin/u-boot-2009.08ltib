@@ -35,7 +35,7 @@
 
 #define CONFIG_ARCH_CPU_INIT
 #undef CONFIG_ARCH_MMU /* disable MMU first */
-#define CONFIG_L2_OFF  /* disable L2 cache first*/
+//#define CONFIG_L2_OFF  /* disable L2 cache first*/
 
 #define CONFIG_MX6_HCLK_FREQ	24000000
 
