@@ -102,7 +102,12 @@
 #define PRSSTAT_CIDHB		(0x00000001)
 
 #define PROCTL			0x0002e028
-#define PROCTL_INIT		0x08800020
+//#define PROCTL_INIT		0x08800020
+#ifdef CONFIG_MMC_DMA
+#define PROCTL_INIT             0x08800220
+#else
+#define PROCTL_INIT             0x08800020
+#endif
 #define PROCTL_DTW_4		0x00000002
 #define PROCTL_DTW_8		0x00000004
 #define PROCTL_D3CD		0x00000008

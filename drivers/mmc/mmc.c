@@ -538,7 +538,7 @@ sd_send_op_cond(struct mmc *mmc)
 	if (mmc->host_caps & SD_UHSI_CAP_ALL_MODES)
 		mmc->uhs18v = ((mmc->ocr & SD_SWITCH_18V) == SD_SWITCH_18V);
 
-	mmc->rca = 0;
+	mmc->rca = 1;
 
 	return 0;
 }
@@ -605,7 +605,7 @@ static int mmc_send_op_cond(struct mmc *mmc)
 	mmc->ocr = cmd.response[0];
 
 	mmc->high_capacity = ((mmc->ocr & OCR_HCS) == OCR_HCS);
-	mmc->rca = 0;
+	mmc->rca = 1;
 
 	return 0;
 }
@@ -891,16 +891,26 @@ int sd_switch(struct mmc *mmc, int mode, int group, u8 value, u8 *resp)
 	return mmc_send_cmd(mmc, &cmd, &data);
 }
 
+#ifdef CONFIG_MMC_DMA
+/* when doing DMA, we need this to be cache size aligned! */
+static uint __attribute__ ((aligned(32))) scr[2];
+static uint __attribute__ ((aligned(32))) switch_status[16];
+#endif
 
 int sd_change_freq(struct mmc *mmc)
 {
 	int err;
 	struct mmc_cmd cmd;
+#ifndef CONFIG_MMC_DMA
 	uint scr[2];
 	uint switch_status[16];
+#endif
 	struct mmc_data data;
 	int timeout;
 
+	printf("scr addr is 0x%p, switch_status addr is 0x%p \n",
+		scr,
+		switch_status);
 	mmc->card_caps = 0;
 
 	if (mmc_host_is_spi(mmc))
@@ -915,7 +925,10 @@ int sd_change_freq(struct mmc *mmc)
 	err = mmc_send_cmd(mmc, &cmd, NULL);
 
 	if (err)
+	{
+		printf("Pre read SCR failed \n");
 		return err;
+	}
 
 	cmd.cmdidx = SD_CMD_APP_SEND_SCR;
 	cmd.resp_type = MMC_RSP_R1;
@@ -936,6 +949,7 @@ retry_scr:
 		if (timeout--)
 			goto retry_scr;
 
+		printf("Read SCR failed: %d \n", err);
 		return err;
 	}
 
@@ -1003,9 +1017,10 @@ retry_scr:
 		if (err)
 			return err;
 
-		if ((__be32_to_cpu(switch_status[4]) & 0x0f000000) ==
-			0x01000000)
+		if ((__be32_to_cpu(switch_status[4]) & 0x0f000000) == 0x01000000) {
 			mmc->card_caps |= MMC_MODE_HS;
+			mmc->tran_speed=50000000;
+		}
 	}
 
 	return 0;
@@ -1236,6 +1251,12 @@ int mmc_startup(struct mmc *mmc)
 
 		if (IS_SD(mmc))
 			mmc->rca = (cmd.response[0] >> 16) & 0xffff;
+		/* Per spec, we can speed up the bus, here */
+		if (IS_SD(mmc)) {
+			mmc_set_clock(mmc, 25000000);
+		} else {
+			mmc_set_clock(mmc, 20000000);
+		};
 	}
 
 	/* Get the Card-Specific Data */
@@ -1257,6 +1278,11 @@ int mmc_startup(struct mmc *mmc)
 	mmc->csd[2] = cmd.response[2];
 	mmc->csd[3] = cmd.response[3];
 
+	printf("csd is 0x%x, 0x%x, 0x%x, 0x%x \n",
+		mmc->csd[0],
+		mmc->csd[1],
+		mmc->csd[2],
+		mmc->csd[3]);
 	if (mmc->version == MMC_VERSION_UNKNOWN) {
 		int version = (cmd.response[0] >> 26) & 0xf;
 
@@ -1376,7 +1402,10 @@ int mmc_startup(struct mmc *mmc)
 		err = mmc_change_freq(mmc);
 
 	if (err)
+	{
+		printf("change freq failed \n"); 
 		return err;
+	}
 
 	/* Restrict card's capabilities by what the host can do */
 	mmc->card_caps &= mmc->host_caps;
@@ -1389,16 +1418,20 @@ int mmc_startup(struct mmc *mmc)
 			cmd.flags = 0;
 
 			err = mmc_send_cmd(mmc, &cmd, NULL);
-			if (err)
+			if (err) {
+				printf("MMC_CMD_APP_CMD MMC_RSP_R1 failed \n");
 				return err;
+			}
 
 			cmd.cmdidx = SD_CMD_APP_SET_BUS_WIDTH;
 			cmd.resp_type = MMC_RSP_R1;
 			cmd.cmdarg = 2;
 			cmd.flags = 0;
 			err = mmc_send_cmd(mmc, &cmd, NULL);
-			if (err)
+			if (err){
+				printf("SD_CMD_APP_SET_BUS_WIDTH failed \n");
 				return err;
+			}
 
 			mmc_set_bus_width(mmc, 4);
 		}
@@ -1406,8 +1439,10 @@ int mmc_startup(struct mmc *mmc)
 		/* Switch the card and host to UHS-I modes, if available */
 		if (mmc->uhs18v) {
 			err = sd_uhsi_mode_select(mmc);
-			if (err)
+			if (err) {
+				printf("sd_uhsi_mode_select failed \n");
 				return err;
+			}
 
 			switch (mmc->card_uhs_mode) {
 			case SD_UHSI_FUNC_SDR104:
@@ -1564,7 +1599,7 @@ int mmc_init(struct mmc *mmc)
 		return err;
 
 	mmc_set_bus_width(mmc, 1);
-	mmc_set_clock(mmc, 1);
+	mmc_set_clock(mmc, 400000);
 
 	/* Reset the Card */
 	err = mmc_go_idle(mmc);

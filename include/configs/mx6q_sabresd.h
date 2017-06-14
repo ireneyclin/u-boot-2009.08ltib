@@ -72,8 +72,15 @@
 #define CONFIG_BAUDRATE			115200
 #define CONFIG_SYS_BAUDRATE_TABLE	{9600, 19200, 38400, 57600, 115200}
 
+#define CONFIG_MXC_SDMA
+#define CONFIG_CMD_SDMA
+#define CONFIG_MMC_DMA
+
 //#define CONFIG_MEM_MALLOC_INIT_FAST
 //#define CONFIG_MMC_BUILTIN_ENV
+
+//#define CONFIG_CONSOLE_QUIET 4096
+//#define CONFIG_CMD_PUTS         1
 
 /***********************************************************
  * Command definition

@@ -342,6 +342,7 @@ struct mmc {
 	uint uhs18v;	/* UHS-I complaint 1.8V signalling */
 	uint bus_width;
 	uint clock;
+	uint oldclock;
 	uint card_caps;
 	uint host_caps;
 	uint card_uhs_mode;
